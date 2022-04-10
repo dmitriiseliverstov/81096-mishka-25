@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Мишка - интернет-магазин вязаных изделий ручной работы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -88,18 +89,18 @@
     </form>
     <form class="personal-data" action="https://echo.htmlacademy.ru/" method="post">
       <p class="personal-data__title">ФИО</p>
-      <label for="personal-data-first">Имя:</label>
+      <label class="personal-data__first" for="personal-data-first">Имя:</label>
       <input class="field" placeholder="Введите ваше имя*" type="text" name="offer-email" id="personal-data-first"  required>
-      <label for="personal-data-second">Фамилия:</label>
+      <label class="personal-data__second" for="personal-data-second">Фамилия:</label>
       <input class="field" placeholder="Укажите фамилию*" type="text" name="offer-email" id="personal-data-second"  required>
-      <label for="personal-data-middle">Отчество:</label>
+      <label class="personal-data__middle" for="personal-data-middle">Отчество:</label>
       <input class="field" placeholder="Отчество, если желаете" type="text" name="offer-email" id="personal-data-middle">
       <p class="personal-data__title personal-data__title--phone">тел</p>
       <input class="field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="text" name="offer-email" id="offer-email"  required>
       <p class="personal-data__title personal-data__title--email">E-mail</p>
       <input class="field" placeholder="Ваш Email*" type="text" name="offer-email" required>
       <p class="personal-data__title">Доп</p>
-      <input class="field" placeholder="Опишите все ваши пожелания к заказу" type="text" name="offer-email">
+      <input class="personal-data__form " placeholder="Опишите все ваши пожелания к заказу" type="text" name="offer-email">
       <p class="personal-data__note">*Поля обязательны для заполнения</p>
 
       <button class="personal-data-button button" type="submit">

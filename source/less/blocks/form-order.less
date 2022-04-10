@@ -1,0 +1,88 @@
+
+
+.form-order__color {
+  padding: 0;
+  margin: 0;
+}
+
+.form-order__type {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-bottom: 31px;
+}
+
+.form-order__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #63D1BB;
+  margin-bottom: 35px;
+}
+.form-order__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.form-order__item {
+  margin-bottom: 24px;
+}
+.form-order__color {
+  border: none;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 60px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+  border: 2px solid #444444;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  background-color: #62D1BA;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  background-image: url("../img/icon-checkbox.svg");
+  width: 24px;
+  height: 17px;
+  top: 12px;
+  left: 8px;
+  content: "";
+}
+
+.control-mark {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 2px solid #444444;
+}
+
+.control-label {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+}
