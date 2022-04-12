@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Мишка - интернет-магазин вязаных изделий ручной работы</title>
@@ -7,8 +7,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
+      <a href="index.html" class="main-header__logo--image">
+        <img class="image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -51,14 +51,14 @@
         </div>
       </section>
       <section class="categories">
-        <ul class="categories__list list">
-          <li class="list__interior list__interior--interior">
-            <h3 class="list__title">
+        <ul class="categories__list">
+          <li class="categories__list__interior categories__list__interior--interior">
+            <h3 class="categories__list__title">
               Предметы интерьера
             </h3>
           </li>
-          <li class="list__toys list__toys--toys">
-            <h3 class="list__title">
+          <li class="categories__list__toys categories__list__toys--toys">
+            <h3 class="categories__list__title">
               Детские игрушки
             </h3>
           </li>
@@ -164,12 +164,17 @@
               г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
             </li>
           </ul>
-          <div class="contacts-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3115807941994!2d30.32305011114413!3d59.93839501597351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2spt!4v1648989122182!5m2!1sen!2spt" width="260" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <button class="contacts__button button" type="button">Напишите нам</button>
         </div>
+        <div class="contacts-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3115807941994!2d30.32305011114413!3d59.93839501597351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2spt!4v1648989122182!5m2!1sen!2spt" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <button class="contacts__button button" type="button">Напишите нам</button>
+
+<<<<<<< HEAD
           <a class="main-header__logo">
+=======
+          <a class="main-footer__logo">
+>>>>>>> 3210f09adfecb58e4930ec6806902ddc7b7ac8aa
             <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
           </a>
         <div class="main-footer__social social">
@@ -186,24 +191,26 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="img/icon-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
+          <div class="copyright-wrapper">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/icon-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
     <div class="modal-order modal-order-close" style="display: none;" >
       <div class="modal-order__wrapper">
         <div class="modal-order__content">
-          <h2 class="modal-order__title">Добавить в корзину</h2>
+          <h2 class="modal-order__title">Добавить<br> в корзину</h2>
           <p class="modal-order__text">Выберите размер:</p>
         </div>
-        <div class="modal-order__size">
-          <button class="modal-order__S modal-order__S--active button" type="button">S</button>
-          <button class="modal-order__M button" type="button">M</button>
-          <button class="modal-order__L button" type="button">L</button>
-          <button class="modal-order__button button" type="button">Добавить</button>
+        <div class="modal-order-size">
+          <button class="modal-order-size__button modal-order-size__button--active button" type="button">S</button>
+          <button class="modal-order-size__button button" type="button">M</button>
+          <button class="modal-order-size__button button" type="button">L</button>
+          <button class="modal-order-size__add button" type="button">Добавить</button>
         </div>
       </div>
     </div>

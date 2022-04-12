@@ -7,18 +7,18 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
+      <a href="index.html" class="main-header__logo--image">
+        <img class="image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav-mobile" style="display: non;">
+        <div class="main-nav">
           <button class="main-nav-close">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
           </ul>
           <ul class="main-nav__list">
@@ -39,8 +39,13 @@
         </div>
       </nav>
     </header>
+    <section class="product-card-title">
+      <div class="product-card-title__wrapper">
+        <h1 class="product-card-title__name">Каталог товаров</h1>
+      </div>
+    </section>
+
     <main class="main-product-card">
-      <h1 class="main-product-card__title">Каталог товаров</h1>
       <section class="product-card card">
         <ul class="card">
           <li class="card__preview">
@@ -114,24 +119,26 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="img/icon-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
+          <div class="copyright-wrapper">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/icon-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
     <div class="modal-order modal-order-close" style="display: none;" >
       <div class="modal-order__wrapper">
         <div class="modal-order__content">
-          <h2 class="modal-order__title">Добавить в корзину</h2>
+          <h2 class="modal-order__title">Добавить<br> в корзину</h2>
           <p class="modal-order__text">Выберите размер:</p>
         </div>
-        <div class="modal-order__size">
-          <button class="modal-order__S modal-order__S--active button" type="button">S</button>
-          <button class="modal-order__M button" type="button">M</button>
-          <button class="modal-order__L button" type="button">L</button>
-          <button class="modal-order__button button" type="button">Добавить</button>
+        <div class="modal-order-size">
+          <button class="modal-order-size__button modal-order-size__button--active button" type="button">S</button>
+          <button class="modal-order-size__button button" type="button">M</button>
+          <button class="modal-order-size__button button" type="button">L</button>
+          <button class="modal-order-size__add button" type="button">Добавить</button>
         </div>
       </div>
     </div>
