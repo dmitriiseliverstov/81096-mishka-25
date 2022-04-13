@@ -7,8 +7,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="index.html" class="main-header__logo--image">
-        <img class="image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
+      <a href="index.html" class="main-header__link--image">
+        <img class="main-header__logo" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -44,7 +44,7 @@
       <section class="preview">
         <div class="preview__wrapper">
           <header class="preview__header">
-            <h2 class="preview-name">
+            <h2 class="preview__name">
               Милые штуки ручной<br> работы для дома
             </h2>
           </header>
@@ -52,13 +52,13 @@
       </section>
       <section class="categories">
         <ul class="categories__list">
-          <li class="categories__list__interior categories__list__interior--interior">
-            <h3 class="categories__list__title">
+          <li class="categories__item categories__item--interior">
+            <h3 class="categories__title">
               Предметы интерьера
             </h3>
           </li>
-          <li class="categories__list__toys categories__list__toys--toys">
-            <h3 class="categories__list__title">
+          <li class="categories__item categories__item--toys">
+            <h3 class="categories__title">
               Детские игрушки
             </h3>
           </li>
@@ -67,7 +67,7 @@
       <section class="top-item">
         <div class="top-item__wrapper">
           <h2 class="top-item__title">Вязаные корзинки</h2>
-          <span class="top-week">ТОВАР НЕДЕЛИ</span>
+          <span class="top-item__week">ТОВАР НЕДЕЛИ</span>
           <p class="top-item__description">Экологически чистая пряжа,
             ручная работа. Доступны в шести расцветках и трёх размерах.
           </p>
@@ -91,9 +91,9 @@
               15 см
             </li>
           </ul>
-          <div class="top-item-product">
+          <div class="top-item__product">
             <img src="img/top-item-product.jpg" width="260" height="315" alt="Товар недели">
-            <span class="top-item-price">Цена: 990 руб.</span>
+            <span class="top-item__price">Цена: 990 руб.</span>
             <button class="top-item__order button" type="button">ЗАКАЗАТЬ</button>
           </div>
         </div>
@@ -168,7 +168,7 @@
         <div class="contacts-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3115807941994!2d30.32305011114413!3d59.93839501597351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2spt!4v1648989122182!5m2!1sen!2spt" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <button class="contacts__button button" type="button">Напишите нам</button>
+        <button class="contacts-button button" type="button">Напишите нам</button>
 
 <<<<<<< HEAD
           <a class="main-header__logo">
@@ -178,17 +178,19 @@
             <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
           </a>
         <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-            </li>
-          </ul>
+          <div class="social__wrapper">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="main-footer__copyright copyright">
           <div class="copyright-wrapper">
