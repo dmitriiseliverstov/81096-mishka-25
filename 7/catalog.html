@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Мишка - интернет-магазин вязаных изделий ручной работы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/81096-mishka-25/7/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <a href="index.html" class="main-header__link--image">
+        <div class="main-header__logo"></div>
+      </a>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--basket">
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="product-card-title">
+      <div class="product-card-title__wrapper">
+        <h1 class="product-card-title__name">Каталог товаров</h1>
+      </div>
+    </section>
+
+    <main class="main-product-card">
+      <section class="product-card card">
+        <ul class="card">
+          <li class="card__preview">
+              <img class="card__image" src="img/bunny-jumper.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </li>
+          <li class="card__title">
+            <p class="card__text">Зайчик-попрыгайчик</p>
+            <p class="card__description">Рост 30 см, вес 200 г</p>
+          </li>
+          <li class="card__price card__price--add-cart">
+            <p class="card__text-price">1200 руб.</p>
+          </li>
+        </ul>
+        <ul class="card">
+          <li class="card__preview">
+              <img class="card__image" src="img/laundry-basket.jpg" width="260" height="195" alt="Корзинка для белья">
+          </li>
+          <li class="card__title">
+            <p class="card__text">Корзинка для белья</p>
+            <p class="card__description">Диаметр 15 см, высота 10 см</p>
+          </li>
+          <li class="card__price card__price--add-cart">
+            <p class="card__text-price">690 руб.</p>
+          </li>
+        </ul>
+        <ul class="card">
+          <li class="card__preview">
+              <img class="card__image" src="img/basket-for-toys.jpg" width="260" height="195" alt="Корзинка для белья">
+          </li>
+          <li class="card__title">
+            <p class="card__text">Большая корзинка для игрушек</p>
+            <p class="card__description">Диаметр 30 см, высота 30 см</p>
+          </li>
+          <li class="card__price card__price--add-cart">
+            <p class="card__text-price">1500 руб.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="promotion-video video">
+        <ul class="video">
+          <li class="video__title video__title--camera">
+            <p class="video__text">Процесс производства</p>
+          </li>
+          <li class="video__preview">
+              <img class="video__image" src="img/video-promo.jpg" width="260" height="150" alt="Зайчик-попрыгайчик">
+          </li>
+          <li class="video__promo-text">
+            <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="make-order button" href="form.html">Сделать заказ</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </a>
+        <div class="main-footer__social social">
+          <div class="social__wrapper">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <div class="copyright-wrapper">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/icon-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-order modal-order-close" style="display: none;" >
+      <div class="modal-order__wrapper">
+        <div class="modal-order__content">
+          <h2 class="modal-order__title">Добавить<br> в корзину</h2>
+          <p class="modal-order__text">Выберите размер:</p>
+        </div>
+        <div class="modal-order-size">
+          <button class="modal-order-size__button modal-order-size__button--active button" type="button">S</button>
+          <button class="modal-order-size__button button" type="button">M</button>
+          <button class="modal-order-size__button button" type="button">L</button>
+          <button class="modal-order-size__add button" type="button">Добавить</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
