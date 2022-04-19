@@ -2,40 +2,43 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка - интернет-магазин вязаных изделий ручной работы</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="index.html" class="main-header__link--image">
-        <img class="main-header__logo" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
-      </a>
       <nav class="main-nav main-nav--closed">
+        <a href="index.html" class="main-header__link--image">
+          <div class="main-header__logo"></div>
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav">
-          <button class="main-nav-close">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <ul class="main-nav__list">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list main-nav__list--first">
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-          </ul>
-          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list__second">
             <li class="main-nav__item main-nav__item--search">
               <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
-          </ul>
-          <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--basket">
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
+          <ul class="main-nav__list main-nav__list--three">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <span class="main-nav__text">Бесплатная доставка по России</span>
         </div>
       </nav>
     </header>
@@ -53,72 +56,93 @@
       <section class="categories">
         <ul class="categories__list">
           <li class="categories__item categories__item--interior">
-            <h3 class="categories__title">
-              Предметы интерьера
-            </h3>
+            <a href class="categories__link">
+              <p class="categories__name-wrapper">
+              <span class="categories__name">Предметы интерьера</span>
+              <svg class="categories__name-svg-interior" width="41" height="62" aria-hidden="true" focusable="false" viewBox="0 0 41 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g opacity=".5" fill="#149080"><path d="M15.5 37.7c-.3 1-.2 2.1 0 3.5.5 2.6 1.7 6 2.5 9.7h5.2c.7-3.6 1.9-7 2.5-9.7a7 7 0 0 0 0-3.5c-.3-1-1-1.6-2-2.3h-6.2c-1.2.7-1.8 1.4-2 2.3ZM27.5 57.5h-14c-1.4 0-2.4 1-2.4 2.2V62H30v-2.2c0-1.2-1-2.2-2.4-2.2ZM34.8 2.2h-12c0-1.2-1-2.2-2.3-2.2-1.3 0-2.3 1-2.3 2.2h-12L0 27.5a5 5 0 0 1 2.7-1c1.4 0 2.2.8 3 1.4.6.6 1.1.8 1.3.8.3 0 .9-.3 1.6-.8.7-.5 1.6-1.4 3-1.4 1.3 0 2.2.8 2.9 1.4.7.5 1.2.8 1.5.8l.6-.2c.2 0 .5-.4 1-.6.5-.4 1-1 2-1.2h.9c1.3 0 2.2.7 3 1.3.7.5 1.2.8 1.5.8.3 0 .8-.3 1.4-.8.7-.6 1.6-1.4 3-1.4s2.2.8 3 1.4c.2.3.5.5.8.6l.7.2c.3 0 .8-.3 1.4-.9.7-.6 1.6-1.4 3-1.4 1 0 1.8.5 2.6 1L34.8 2.2ZM24 53h-7c-.8 0-1.2.6-1.2 1.1 0 .6.5 1.1 1.1 1.1h7c.8 0 1.2-.5 1.2-1 0-.6-.4-1.1-1.1-1.1Z"/><path d="m20.5 28.7-.6.2-.6.4V33h2.3v-3.6c-.5-.4-.9-.7-1.1-.7Z"/></g></svg>
+              </p>
+            </a>
           </li>
           <li class="categories__item categories__item--toys">
-            <h3 class="categories__title">
-              Детские игрушки
-            </h3>
+            <a href class="categories__link">
+              <p class="categories__name-wrapper">
+              <span class="categories__name"> Детские игрушки</span>
+              <svg class="categories__name-svg-toys" width="61" height="61" aria-hidden="true" focusable="false" viewBox="0 0 61 61" fill="#149080" xmlns="http://www.w3.org/2000/svg"><path opacity=".5" d="M0 44.7 27.9 61V37.2L0 20.8v24Zm52.2-32v2.6c0 1.8-3.6 3.3-7.9 3.3-4.3 0-7.8-1.5-7.8-3.4v-4.1c.3 1.7 3.7 3.1 7.8 3.1 4.4 0 7.9-1.5 7.9-3.4 0-1.8-3.6-3.3-7.9-3.3h-1l-5-3v3.2c0 1.8-3.6 3.4-7.9 3.4-2.7 0-5-.7-6.5-1.6l-.7-.6c-.4-.4-.6-.8-.6-1.2v-3l-5 2.8h-1c-4.4 0-7.9 1.5-7.9 3.3 0 1.9 3.6 3.4 7.9 3.4 4.1 0 7.5-1.4 7.8-3.1v4.2c0 1.8-3.6 3.3-7.8 3.3-4.4 0-7.9-1.5-7.9-3.4v-2.4l-6 3.6 27.9 16.4 27.9-16.3-6.3-3.8ZM38.3 23c0 1.9-3.5 3.4-7.8 3.4-4.4 0-7.8-1.5-7.8-3.4V19c.3 1.8 3.6 3.2 7.8 3.2 4.2 0 7.5-1.4 7.8-3.2v4.2Zm-5.2 14.3V61L61 44.7V21.1L33.1 37.4ZM30.4 6.8c4.4 0 7.8-1.6 7.8-3.4 0-1.9-3.5-3.4-7.8-3.4-4.4 0-7.8 1.5-7.8 3.4 0 1.8 3.4 3.4 7.8 3.4Z"/></svg>
+              </p>
+            </a>
           </li>
         </ul>
       </section>
       <section class="top-item">
-        <div class="top-item__wrapper">
-          <h2 class="top-item__title">Вязаные корзинки</h2>
-          <span class="top-item__week">ТОВАР НЕДЕЛИ</span>
-          <p class="top-item__description">Экологически чистая пряжа,
-            ручная работа. Доступны в шести расцветках и трёх размерах.
-          </p>
-          <ul class="top-item__dimensions">
-            <li class="top-item__parameters">
-              Цвет:
-            </li>
-            <li class="top-item__details">
-              тиффани/серый
-            </li>
-            <li class="top-item__parameters">
-              Диаметр:
-            </li>
-            <li class="top-item__details">
-              25 см
-            </li>
-              <li class="top-item__parameters">
-              Высота:
-              </li>
-            <li class="top-item__details">
-              15 см
-            </li>
-          </ul>
-          <div class="top-item__product">
-            <img src="img/top-item-product.jpg" width="260" height="315" alt="Товар недели">
-            <span class="top-item__price">Цена: 990 руб.</span>
-            <button class="top-item__order button" type="button">ЗАКАЗАТЬ</button>
+        <div class="top-item__conteiner">
+          <div class="top-item__wrapper">
+            <h2 class="top-item__title">Вязаные корзинки</h2>
+            <span class="top-item__week">ТОВАР НЕДЕЛИ</span>
+          </div>
+          <div class="top-item__description-wrapper">
+            <div class="top-item__description">
+              <div class="top-item__description-container">
+                <p class="top-item__text">Экологически чистая пряжа,
+                  ручная работа. Доступны в шести расцветках и трёх размерах.
+                </p>
+                <ul class="top-item__dimensions">
+                  <li class="top-item__parameters">
+                    Цвет:
+                  </li>
+                  <li class="top-item__details">
+                    тиффани/серый
+                  </li>
+                  <li class="top-item__parameters">
+                    Диаметр:
+                  </li>
+                  <li class="top-item__details">
+                    25 см
+                  </li>
+                    <li class="top-item__parameters">
+                    Высота:
+                    </li>
+                  <li class="top-item__details">
+                    15 см
+                  </li>
+                </ul>
+              </div>
+              <div class="top-item__product">
+                <img src="img/top-item-product.jpg" width="260" height="315" alt="Товар недели">
+              </div>
+              <div class="top-item__price-wrapper">
+                <span class="top-item__price">Цена: 990 руб.</span>
+                <button class="top-item__order button" type="button">ЗАКАЗАТЬ</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Коротко о нас:</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--ecology">
+              <svg class="advantages-svg advantages-svg--flower" width="33" height="38" aria-hidden="true" focusable="false" viewBox="0 0 33 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 38c9 0 16.5-7.4 16.5-16.3-9 0-16.5 7.2-16.5 16.3ZM4.7 16.7c0 2.5 2.1 4.4 4.6 4.4 1 0 1.8-.3 2.6-.8v.3c0 2.6 2 4.5 4.5 4.5 2.6 0 4.5-2 4.5-4.5v-.3c.8.5 1.7.8 2.6.8 2.6 0 4.6-2 4.6-4.4 0-1.9-1-3.4-2.6-4.1A4.4 4.4 0 0 0 28 8.5C28 5.9 26 4 23.5 4c-1 0-1.8.3-2.6.8v-.3C21 1.9 19 0 16.4 0c-2.6 0-4.5 2-4.5 4.5v.3C11 4.3 10.2 4 9.3 4 6.7 4 4.7 6 4.7 8.5c0 1.8 1 3.3 2.6 4a4.6 4.6 0 0 0-2.6 4.2ZM16.5 8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 1 1 0-9ZM0 21.7C0 30.7 7.4 38 16.5 38c0-9-7.4-16.3-16.5-16.3Z"/></svg>
               <p class="advantages__description">Экологически чистые материалы</p>
             </li>
             <li class="advantages__item advantages__item--style">
+              <svg class="advantages-svg advantages-svg--money" width="47" height="27" aria-hidden="true" focusable="false" viewBox="0 0 47 27" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M43 0H4C1.6 0 0 1.7 0 3.9V23C0 25.3 1.7 27 4 27h39c2.3 0 4-1.7 4-3.9V4A4 4 0 0 0 43 0ZM3 24.7v-22h40.6v22H3Z" fill="#63D1BB"/><path d="M7 20.9h32.6V6.6H7V21ZM23.5 8.5c3 0 5.3 2.4 5.3 5.2a5.3 5.3 0 0 1-10.7 0c0-3 2.5-5.2 5.4-5.2Z"/></svg>
               <p class="advantages__description">Скандинавский стиль по российской цене</p>
             </li>
             <li class="advantages__item advantages__item--likes">
+              <svg class="advantages-svg advantages-svg--likes" width="34" height="27" aria-hidden="true" focusable="false" viewBox="0 0 34 27" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M34 8.4C34 3.8 30 0 25 0c-3.5 0-6.5 2-8 4.7A9.1 9.1 0 0 0 9 0C4 0 0 3.8 0 8.4 0 17.3 15.1 27 17 27c2 0 17-9.6 17-18.6Z"/></svg>
               <p class="advantages__description">Увеличивает лайки на фотографиях</p>
             </li>
             <li class="advantages__item advantages__item--hands">
+              <svg class="advantages-svg advantages-svg--clew" width="35" height="34" aria-hidden="true" focusable="false" viewBox="0 0 35 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.3 14a16 16 0 0 0 0 6.2L4.5 17 .3 14ZM24.9 1.6A18 18 0 0 0 9.3 2l7.6 5.5 8-6ZM34.5 13l-4.9 3.7 5 3.7c.5-2.4.5-5 0-7.3ZM9.4 32a17.8 17.8 0 0 0 16 .2l-8.3-6L9.4 32ZM8 14.2 1.7 9.7l-.8 2 5.4 4L8 14.2ZM19 24.8l8.4 6.2.8-.6 1-.8-8.5-6.2-1.8 1.4ZM11.6 11.6 4.1 6c-.5.5-1 1.1-1.3 1.7l7 5.2 1.8-1.4ZM22.5 22.2l8.3 6c.5-.5.9-1 1.3-1.7l-7.9-5.7-1.7 1.4ZM15.2 9 7.3 3.1c-.2 0-.4.3-.6.4l-1.1 1 7.8 5.6 1.8-1.3ZM26 19.4l7.2 5.1 1-2-6.3-4.5-1.8 1.4ZM26.9 2.7.9 22.4l.8 2L28.7 4c-.5-.5-1.1-1-1.8-1.3ZM31.3 6.5c-.3-.4-.6-.8-1-1L3 26.1c.2.5.5 1 .8 1.2 0 .2.3.4.4.5L31.8 7.1l-.5-.6ZM32.9 9 5.7 29.4l1.7 1.4 26.5-20-1-2Z"/></svg>
               <p class="advantages__description">Связано вручную с любовью и умилением</p>
             </li>
             <li class="advantages__item advantages__item--support">
+              <svg class="advantages-svg advantages-svg--rocket" width="55" height="23" aria-hidden="true" focusable="false" viewBox="0 0 55 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M41 5.8a47.8 47.8 0 0 0-20.4-1.1L13.7 0H.2L6 6.1h8.5c-4.7 1.6-7 3.5-7 3.5v3.8s2.4 1.9 7 3.5H6L0 23h13.6l7-4.7a46 46 0 0 0 20.2-1c-1.2-1.8-1.9-3.7-1.9-5.9.1-2 1-3.9 2-5.6ZM44.5 6.7a7.6 7.6 0 0 0-2 4.8c0 1.6.7 3.2 2 4.8C51 14 55 11.5 55 11.5s-4-2.6-10.5-4.8Z"/></svg>
               <p class="advantages__description">Поддержка отечественного производителя</p>
             </li>
             <li class="advantages__item advantages__item--gift">
+              <svg class="advantages-svg advantages-svg--present" width="33" height="32" aria-hidden="true" focusable="false" viewBox="0 0 33 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 32h12.6V18.3H3V32ZM31.4 8.7H24l1.4-.8c1.6-1 2.5-2.6 2.5-4 0-1.1-.7-2.1-1.5-2.8-.8-.7-1.9-1.1-3-1.1-1.2 0-2.4.4-3.3 1-1.5 1-2.6 2.6-3.4 4.1l-.1.2-1-1.7c-.8-1-1.6-2-2.6-2.5C12 .5 11 0 9.7 0a5 5 0 0 0-3.2 1.3C5.7 2 5 3.2 5 4.3c0 .7.2 1.5.7 2.2.6 1 1.4 1.6 2.6 2.2H1.6c-.9 0-1.6.7-1.6 1.6V16h15.5V8.7h2V16H33v-5.8c0-1-.7-1.6-1.6-1.6ZM8.9 6.4l-1.2-1-.3-1c0-.5.2-1 .7-1.5.4-.4 1-.7 1.6-.7.7 0 1.4.2 2 .7 1 .7 2 1.7 2.6 3.1l.8 2.1A15 15 0 0 1 9 6.4Zm10.6-1.6C20 4 20.7 3.4 21.4 3c.7-.5 1.4-.7 2-.7.6 0 1.1.2 1.5.5.4.3.6.7.6 1.2 0 .4-.3 1.2-1.5 2-1 .8-3.1 1.7-6.1 2.3.3-1.2.9-2.5 1.6-3.5Zm-2 27.2H30V18.3H17.5V32Z"/></svg>
               <p class="advantages__description">Поставляется в подарочной упаковке</p>
             </li>
           </ul>
@@ -146,37 +170,42 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__contacts contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <ul class="contacts__block">
-            <li class="contacts__address">
-              email:
-            </li>
-            <li class="contacts__details">
-              info@mimimishkashop.ru
-            </li>
-            <li class="contacts__address">
-              адрес:
-            </li>
-            <li class="contacts__details">
-              г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
-            </li>
-          </ul>
+        <div class="contacts">
+          <div class="contacts-wrapper">
+            <svg class="contacts-svg" width="47" height="81" aria-hidden="true" focusable="false" viewBox="0 0 47 81" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 3.9v38.5L47 23 7.8 3.9ZM0 80.9V0h3.8v80.9H0Z" fill="#63D1BB"/><path d="M3.8.1H0V81h3.8V.1Z"/></svg>
+            <h2 class="contacts__title">Контакты</h2>
+            <ul class="contacts__block">
+              <li class="contacts__address">
+                email:
+              </li>
+              <li class="contacts__details contacts__details--border">
+                info@mimimishkashop.ru
+              </li>
+              <li class="contacts__address">
+                адрес:
+              </li>
+              <li class="contacts__details">
+                г. Санкт-Петербург<br> ул. Большая Конюшенная д. 19/8, офис 101
+              </li>
+            </ul>
+          </div>
+          <div class="contacts-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3115807941994!2d30.32305011114413!3d59.93839501597351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2spt!4v1648989122182!5m2!1sen!2spt" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button class="contacts-button button" type="button">Напишите нам</button>
+          </div>
+          <!-- <button class="contacts-button button" type="button">Напишите нам</button> -->
         </div>
-        <div class="contacts-map">
+        <!-- <div class="contacts-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3115807941994!2d30.32305011114413!3d59.93839501597351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2spt!4v1648989122182!5m2!1sen!2spt" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <button class="contacts-button button" type="button">Напишите нам</button>
+        </div> -->
 
-<<<<<<< HEAD
-          <a class="main-header__logo">
-=======
-          <a class="main-footer__logo">
->>>>>>> 3210f09adfecb58e4930ec6806902ddc7b7ac8aa
-            <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
-          </a>
+        <footer class="main-footer">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__logo-wrapper">
+              <a class="main-footer__logo">
+                <img class="main-footer__logo-image" src="../img/logo-footer.svg" width="102" height="35" alt="Мишка">
+              </a>
+            </div>
         <div class="main-footer__social social">
           <div class="social__wrapper">
             <ul class="social__list">

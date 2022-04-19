@@ -1,20 +1,156 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
 .categories__list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   padding: 0;
   margin: 0;
   margin-bottom: 31px;
 }
 
-.categories__item {
-  background: #56C3B2;
-  padding: 24px 0 31px 0;
-  color: #ffffff;
+.categories__name-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  width: 170px;
+  padding: 25px 0 15px 30px;
 }
 
-.categories__title {
+.categories__item {
+  min-height: 103px;
+  background: #56C3B2;
+  color: #ffffff;
+  position: relative;
+}
+
+.categories__link {
+  font-family: inherit;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
+  color: #ffffff;
   width: 160px;
   margin: 0 auto;
+  text-decoration: none;
+}
+
+.categories__name {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.categories__name-svg-interior {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  margin-right: 36px;
+}
+
+.categories__name-svg-toys {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  margin-right: 27px;
+}
+.categories__item--toys {
+  background: #56C3B2;
+}
+.categories__item--interior {
+  background: #63D1BB;
+}
+
+@media (min-width: @tablet-width) {
+  .categories__name-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 170px;
+    padding: 0;
+  }
+  .categories__item {
+    width: 334px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 25px 0 34px 36px;
+    box-sizing: border-box;
+  }
+  .categories__item--interior {
+    background: #63D1BB;
+  }
+  .categories__item--toys {
+    background: #56C3B2;
+  }
+  .categories__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+  }
+
+  .categories__link {
+    font-family: inherit;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    width: 160px;
+    margin: 0;
+    text-decoration: none;
+  }
+  .categories__name {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 160px;
+    margin: 0;
+    color: #ffffff;
+  }
+  .categories__name-svg-toys {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    margin-right: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    margin: 0 auto;
+    padding: 32px 0;
+  }
+  .categories__item {
+    background: #56C3B2;
+    padding: 24px 0 34px 36px;
+    color: #ffffff;
+    width: 525px;
+    min-height: 119px;
+    box-sizing: border-box;
+  }
+  .categories__list {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+  }
+  .categories__item--interior {
+    background: #63D1BB;
+  }
+  .categories__name-svg-toys {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    margin-right: 36px;
+  }
 }
