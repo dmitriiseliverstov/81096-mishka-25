@@ -1,7 +1,11 @@
 .reviews__wrapper {
   width: 260px;
+  display: grid;
+  grid-template-columns: 260px;
+  grid-template-rows: min-content min-content min-content min-content;
   margin: 0 auto;
   margin-bottom: 89px;
+  padding: 0 30px;
 }
 
 .reviews__title {
@@ -10,9 +14,11 @@
   font-weight: 700;
   color: #000000;
   padding: 0;
+  margin: 0;
 }
 
 .reviews__item {
+  grid-row: 2/-2;
   margin: 0;
 }
 .reviews__text {
@@ -32,6 +38,7 @@
 }
 .reviews__write {
   display: block;
+  width: 260px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -49,7 +56,7 @@
 }
 .reviews__prev {
   display: block;
-  width: 129px;
+  width: 130px;
   height: 52px;
   border: 1px solid #ECECEC;
   background: #FFFFFF;
@@ -65,21 +72,71 @@
 
 @media (min-width: @tablet-width) {
   .reviews__wrapper {
-    width: 768px;
+    width: 668px;
+    display: grid;
+    grid-template-columns: 493px 175px;
+    grid-template-rows: min-content min-content min-content min-content;
     margin: 0 auto;
+    margin-bottom: 89px;
     padding: 0 50px;
-    box-sizing: border-box;
   }
+
+  .reviews__container {
+    grid-row: 3;
+    margin: 0;
+  }
+  .reviews__write {
+  width: 175px;
+  }
+
+  .reviews__write-wpapper {
+    margin-bottom: 40px;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #000000;
+    padding: 0;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    margin: 0;
+  }
+
   .reviews__author-info {
     width: 668px;
+    margin: 0;
+    margin-bottom: 61px;
+    }
+  .reviews__author-nick {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .reviews__prev {
+    width: 85px;
+  }
+  .reviews__next {
+    width: 85px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
     width: 1150px;
-    margin: 0 auto;
-    padding: 0 50px 0 225px;
+    grid-template-columns: 700px 175px;
+    grid-template-rows: min-content min-content min-content min-content;
+    padding: 0 225px;
     box-sizing: border-box;
     margin-bottom: 161px;
   }

@@ -1,5 +1,11 @@
-
+.card__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
 .card {
+  display: grid;
+  grid-template-columns: 260px;
+  grid-template-rows: min-content min-content min-content;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -41,4 +47,71 @@ padding-left: 28px;
 .card__price {
   border: 1px solid #ECECEC;
   padding-left: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    grid-template-columns: 334px 306px;
+    grid-template-rows: 260px min-content;
+    column-gap: 28px;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 54px;
+    padding: 0;
   }
+  .card__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+  .card__preview {
+    height: 334px;
+  }
+  .card__price {
+    grid-column: 2/2;
+    border: 1px solid #ECECEC;
+  }
+  .card__text-price {
+    margin: 24px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 315px 315px 315px;
+    column-gap: 51px;
+    margin-bottom: 57px;
+  }
+  .card {
+    grid-template-columns: 316px;
+    grid-template-rows: min-content min-content min-content;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 57px;
+    padding: 0;
+  }
+  .card__title {
+    border: 1px solid #ECECEC;
+    padding-left: 28px;
+    grid-row: 2;
+    min-height: 126px;
+    }
+  .card__price {
+    grid-column: 1;
+    grid-row: 3;
+    border: 1px solid #ECECEC;
+  }
+  .card__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  .card__text {
+    margin-bottom: 6px;
+  }
+
+  .card__description {
+    margin: 0;
+  }
+}

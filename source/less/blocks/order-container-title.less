@@ -18,4 +18,41 @@
   margin: 0;
   margin-bottom: 17px;
   background: #F1F1F1;
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .order-container-title__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .order-container-title__name {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 100px 0 75px 0;
+    margin: 0;
+    background: #F1F1F1;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-container-title__name {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    padding: 102px 0 95px 322px;
+    margin: 0;
+    width: 506px;
+    margin-bottom: 17px;
+    background: #F1F1F1;
+  }
+  .order-container-title__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
