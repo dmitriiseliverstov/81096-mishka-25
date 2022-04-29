@@ -1,9 +1,28 @@
+
 .personal-data {
   margin-bottom: 55px;
 }
+.personal-data__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 30px;
+}
 
-.personal-data__wrapper-block1 {
+.personal-data__full-name {
+  margin: 0 auto;
   margin-bottom: 34px;
+  padding: 0;
+  border: none;
+}
+.personal-data__phone {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+.personal-data__additionally {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
 }
 
 .personal-data__title {
@@ -77,11 +96,15 @@
 }
 
 .personal-data__container-phone {
+  width: 260px;
   margin-bottom: 34px;
+  position: relative;
 }
 
 .personal-data__container-email {
+  width: 260px;
   margin-bottom: 34px;
+  position: relative;
 }
 
 .personal-data__container-description {
@@ -118,29 +141,44 @@
 
 
 @media (min-width: @tablet-width) {
-  .personal-data__wrapper-block1 {
-    display: flex;
+  .personal-data__full-name {
     padding: 50px 0;
+    margin: 0 auto;
+    border: none;
   }
-  .personal-data__wrapper-block2 {
+  .personal-data__wrapper {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0;
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 50px;
   }
-  .personal-data__wrapper-block3 {
-    display: flex;
-    flex-wrap: wrap;
+  .personal-data__phone {
+    background: #F1F1F1;
+    margin: 0 auto;
+    border: none;
+  }
+  .personal-data__additionally {
     padding: 50px 0;
+    border: none;
   }
   .personal-data__title {
     width: 70px;
     margin-top: 17px;
   }
   .personal-data__container {
-    margin-left: 97px;
+    margin-left:97px;
   }
   .personal-data__container-phone {
+    width: 606px;
     margin-bottom: 24px;
+    margin-right: 34px;
+    position: relative;
+  }
+  .personal-data__container-email {
+    width: 606px;
+    position: relative;
   }
   .personal-data__container-description {
     width: 501px;
@@ -160,9 +198,6 @@
   .personal-data__middle {
     font-size: 19px;
     width: 99px;
-  }
-  .field-first {
-    width: 428px;
   }
   .personal-data__form {
     width: 501px;
@@ -212,6 +247,23 @@
 }
 
 @media (min-width: @desktop-width) {
+  .personal-data__wrapper {
+    width: 1150px;
+    padding-left:97px;
+  }
+  .personal-data__additionally {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    width: 1050px;
+    margin: 0 auto;
+  }
+  .personal-data__full-name {
+    display: flex;
+    padding: 50px 0;
+    width: 1150px;
+    margin: 0 auto;
+  }
   .personal-data__form {
     width: 700px;
     padding: 0;
@@ -246,8 +298,8 @@
     margin-top: 17px;
   }
 
-  .personal-data__wrapper-block2 {
-    width: 900px;
+  .personal-data__phone {
+    margin: 0 auto;
   }
   .personal-data__container-note {
     margin-left: 128px;
@@ -262,7 +314,16 @@
   .personal-data__container {
     margin-left: 60px;
   }
+  .personal-data__container-phone {
+    width: 767px;
+    margin-right: 250px;
+    position: relative;
+  }
+  .personal-data__container-email {
+    width: 767px;
+    position: relative;
+  }
   .personal-data__title {
-    width: 67px;
+    width: 70px;
   }
 }
