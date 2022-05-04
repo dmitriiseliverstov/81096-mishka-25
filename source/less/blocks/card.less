@@ -1,6 +1,8 @@
 .card__wrapper {
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 .card {
   display: grid;
@@ -47,6 +49,13 @@ padding-left: 28px;
 .card__price {
   border: 1px solid #ECECEC;
   padding-left: 28px;
+  position: relative;
+}
+
+.card__price--add-cart {
+  position: absolute;
+  top: 22px;
+  right: 27px;
 }
 
 @media (min-width: @tablet-width) {
