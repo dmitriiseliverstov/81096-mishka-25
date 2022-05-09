@@ -7,7 +7,18 @@
   margin: 0 auto;
   padding-left: 30px;
 }
-
+.form-order__line {
+  position: relative;
+}
+.form-order__line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  height: 1px;
+  width: 200px;
+  background-color: #62D1BA;
+}
 .form-order__color {
   padding: 0;
   margin: 0;
@@ -61,6 +72,7 @@
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
   border: 2px solid #444444;
+  background: #ffffff;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before,
@@ -112,6 +124,9 @@
     width: 768px;
     margin: 0 auto;
     padding-left: 50px;
+  }
+  .form-order__line::before {
+    display: none;
   }
   .form-order__color {
     padding: 50px 0;

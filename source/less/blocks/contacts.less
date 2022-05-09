@@ -2,7 +2,8 @@
   display: grid;
   grid-template-rows: min-content min-content min-content min-content min-content;
   grid-column: 260px;
-  width: 260px;
+  width: 320px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -92,16 +93,19 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
+    display: flex;
+    flex-wrap: wrap;
     width: 1150px;
     padding: 0 50px 0 225px;
-    box-sizing: border-box;
     margin: 0 auto;
+    margin-bottom: 105px;
   }
   .contacts-wrapper {
     padding: 0;
     margin: 0;
     position: relative;
-    grid-template-columns: 291px 527px;
+    grid-template-columns: 291px;
+    width: 348px;
     column-gap: 58px;
   }
   .contacts__title {

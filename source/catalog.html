@@ -7,33 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a href="index.html" class="main-header__link--image">
-        <div class="main-header__logo"></div>
-      </a>
-      <nav class="main-nav main-nav--closed">
+    <header class="main-header main-header--border">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <a href="index.html" class="main-header__link--image">
+          <div class="main-header__logo"></div>
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--first">
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-          </ul>
-          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list__second">
             <li class="main-nav__item main-nav__item--search">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
+              <svg class="main-nav__item-search" width="18" height="18" aria-hidden="true" focusable="false" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="m17.7 16-3.5-3.4A7.8 7.8 0 0 0 8 0 7.8 7.8 0 0 0 0 7.9c0 4.4 3.5 7.8 7.9 7.8 1.7 0 3.3-.6 4.7-1.5l3.5 3.5c.2.2.4.3.8.3.6 0 1.1-.5 1.1-1.1l-.3-.8ZM2.3 8c0-3 2.5-5.7 5.6-5.7 3 0 5.6 2.6 5.6 5.7 0 3-2.6 5.6-5.6 5.6-3 0-5.7-2.6-5.7-5.6Z"/></svg>
+              <a class="main-nav__link main-nav__link-search" href="#">Поиск по сайту</a>
             </li>
-          </ul>
-          <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--basket">
+              <svg class="main-nav__item-backet" width="21" height="18" aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
+          <ul class="main-nav__list main-nav__list--three">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <span class="main-nav__text">Бесплатная доставка по России</span>
         </div>
       </nav>
     </header>
@@ -55,7 +62,7 @@
           </li>
           <li class="card__price">
             <p class="card__text-price">1200 руб.</p>
-            <svg class="card__price--add-cart" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+            <svg class="card__price--add-cart" width="21" height="18" aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
           </li>
         </ul>
         <ul class="card">
@@ -68,7 +75,7 @@
           </li>
           <li class="card__price">
             <p class="card__text-price">690 руб.</p>
-            <svg class="card__price--add-cart" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+            <svg class="card__price--add-cart" width="21" height="18" aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
           </li>
         </ul>
         <ul class="card">
@@ -81,14 +88,15 @@
           </li>
           <li class="card__price">
             <p class="card__text-price">1500 руб.</p>
-            <svg class="card__price--add-cart" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+            <svg class="card__price--add-cart" width="21" height="18" aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
           </li>
         </ul>
       </section>
 
       <section class="promotion-video video">
         <ul class="video">
-          <li class="video__title video__title--camera">
+          <li class="video__title">
+            <svg class="video__title-svg" width="32" height="22" aria-hidden="true" focusable="false" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m26 10 6-4v16l-6-4v-8Zm-2 0v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-8a4 4 0 0 1 4-4h10c0-1.1.9-2 2-2V2H5c-.6 0-1-.4-1-1s.4-1 1-1h12c.6 0 1 .4 1 1v3a2 2 0 0 1 2 2 4 4 0 0 1 4 4Zm-12 0H4v8h8v-8Zm8 1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1s.4 1 1 1h4c.6 0 1-.4 1-1Z" fill="#63D1BB"/></svg>
             <p class="video__text">Процесс производства</p>
           </li>
           <li class="video__preview">

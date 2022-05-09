@@ -66,11 +66,17 @@ padding-left: 28px;
     margin-bottom: 54px;
   }
   .card__wrapper {
-    width: 668px;
+    width: 768px;
+    padding: 0 50px;
     margin: 0 auto;
   }
   .card__preview {
     height: 334px;
+  }
+  .card__text {
+    font-size: 20px;
+    line-height: 24px;
+
   }
   .card__price {
     grid-column: 2/2;
@@ -83,7 +89,7 @@ padding-left: 28px;
 
 @media (min-width: @desktop-width) {
   .card__wrapper {
-    width: 1050px;
+    width: 1150px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 315px 315px 315px;
@@ -105,10 +111,6 @@ padding-left: 28px;
     grid-column: 1;
     grid-row: 3;
     border: 1px solid #ECECEC;
-  }
-  .card__wrapper {
-    width: 1050px;
-    margin: 0 auto;
   }
   .card__text {
     margin-bottom: 6px;
