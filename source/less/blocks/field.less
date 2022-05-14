@@ -6,7 +6,18 @@
   box-shadow: inset 0px -2px 0px #000000;
   padding: 0;
 }
-
+.field:hover {
+  box-shadow: inset 0px -2px 0px #62D1BA;
+}
+.field:active {
+  box-shadow: inset 0px -2px 0px #62D1BA;
+}
+.field:focus-visible {
+  outline: none;
+}
+.field-phone-svg:hover {
+  fill: #62D1BA;
+}
 .field-phone-svg {
   position: absolute;
   top: 11px;
@@ -108,30 +119,54 @@
 @media (min-width: @desktop-width) {
   .field-first {
     width: 626px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: inherit;
   }
   .field-second {
     width: 573px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: inherit;
   }
   .filed-middle {
     width: 573px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: inherit;
   }
   .field-phone {
     width: 700px;
     margin-left: 67px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: inherit;
   }
   .field-phone-svg {
     position: absolute;
     top: 11px;
     right: 8px;
+    fill: #000000;
+    opacity: 0.2;
   }
   .field-email {
     width: 700px;
     margin-left: 67px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: inherit;
   }
   .field-email-svg {
     position: absolute;
     top: 11px;
     right: 8px;
+    fill: #000000;
+    opacity: 0.2;
   }
   .field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #000000;

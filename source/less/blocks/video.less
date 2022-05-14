@@ -9,15 +9,20 @@
 }
 .video__title {
   position: relative;
+
+  &::after {
+    content: "";
+    background-image: url(../img/icon-video.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    top: 35px;
+    left: 34px;
 }
-.video__title-svg {
-  position: absolute;
-  content: "";
-  top: 34px;
-  left: 35px;
-  width: 32px;
-  height: 22px;
+
 }
+
 .video__text {
   width: 156px;
   font-size: 17px;
@@ -61,13 +66,13 @@
   }
   .video__title {
     position: relative;
+
+    &::after {
+      top: 39px;
+      left: 42px;
+    }
   }
-  .video__title-svg {
-    position: absolute;
-    content: "";
-    top: 39px;
-    left: 42px;
-  }
+
   .video__text {
     width: 400px;
     font-size: 20px;
@@ -112,13 +117,10 @@
   }
   .video__title {
     position: relative;
-  }
-  .video__title-svg {
-    position: absolute;
-    content: "";
-    top: 47px;
-    left: 0;
-    width: 32px;
-    height: 22px;
+
+    &::after {
+      top: 47px;
+      left: 0;
+    }
   }
 }

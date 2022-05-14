@@ -10,7 +10,7 @@
   font-size: 27px;
   line-height: 30px;
   width: 260px;
-  padding: 73px 0 120px;
+  padding: 73px 0 193px;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
@@ -34,14 +34,14 @@
 }
 
 @media (min-width: @tablet-width) {
-.preview__header {
-  width: 768px;
-  height: 746px;
-  background-image: url("../img/preview-desktop.jpg");
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
+  .preview__header {
+    width: 768px;
+    height: 746px;
+    background-image: url("../img/preview-desktop.jpg");
+    background-size: auto auto;
+    background-repeat: repeat-x;
+    background-position: center;
+    }
   .preview__wrapper {
     width: 768px;
     margin: 0 auto;
@@ -51,7 +51,7 @@
     font-family: "Open Sans", sans-serif;
     font-size: 43px;
     line-height: 50px;
-    padding: 120px 0 120px;
+    padding: 155px 0 120px;
     margin: 0 auto;
     text-align: center;
     width: 668px;
@@ -78,10 +78,18 @@
     background-repeat: no-repeat;
     background-position: center;
     }
-    .reviews__zizzag-line {
-      width: 1050px;
-      height: 23px;
-      margin-top: 73px;
-      margin-bottom: 68px;
-    }
+  .reviews__zizzag-line {
+    width: 1050px;
+    height: 23px;
+    margin-top: 73px;
+    margin-bottom: 68px;
+  }
+  .preview__name {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 157px 0 120px;
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+  }
 }
