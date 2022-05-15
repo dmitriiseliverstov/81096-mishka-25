@@ -10,11 +10,32 @@
   margin-right: 27px;
   align-self: center;
 }
-
+.copyright__logo {
+  color: #63D1BB;
+}
 .copyright__logo {
   height: 34px;
 }
 
 .copyright__link {
   height: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__logo {
+    color: #63D1BB;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__logo {
+    color: #63D1BB;
+  }
+  .copyright__logo:hover {
+    color: #46C1AE;
+  }
+  .copyright__logo:active {
+    color: #46C1AE;
+    opacity: 0.3;
+  }
 }

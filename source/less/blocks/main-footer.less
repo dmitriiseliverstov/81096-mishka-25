@@ -1,5 +1,6 @@
   .main-footer {
     background: #F1F1F1;
+    margin-top: 58px;
   }
 
   .main-footer__wrapper {
@@ -21,6 +22,15 @@
   }
   .main-footer__social {
     padding-left: 21px;
+    position: relative;
+  }
+  .main-footer__social::after {
+    border-bottom: 1px solid #E5E5E5;
+    width: 260px;
+    content: "";
+    top: 51px;
+    left: -37px;
+    position: absolute;
   }
 
   .main-footer__copyright {
@@ -55,6 +65,12 @@
     display: flex;
     margin: 0;
   }
+  .main-footer__logo-image {
+    color: #000000;
+  }
+  .main-footer__social::after {
+    border:none
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -67,5 +83,18 @@
   .main-footer__contacts {
     width: 1150px;
     display: flex;
+  }
+  .main-footer__logo-image {
+    fill: #000000;
+  }
+  .main-footer__logo-image:hover {
+    fill: #46C1AE;
+  }
+  .main-footer__logo-image:active {
+    fill: #46C1AE;
+    opacity: 0.3;
+  }
+  .main-footer__social::after {
+    border:none
   }
 }
