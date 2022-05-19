@@ -104,6 +104,15 @@
   border: 1px solid #ECECEC;
   background: #FFFFFF;
 }
+.reviews__zizzag-line {
+  display: block;
+  width: 320px;
+  height: 6px;
+  fill: #F1F1F1;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
 .reviews__container-arrow-right {
   transform: rotate(-180deg);
 }
@@ -125,16 +134,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reviews::after{
-    content: "";
-    position: absolute;
-    top: -82px;
-    left: 0;
-    width: 350px;
+  .reviews__wrapper-img{
     height: 457px;
     background-image: url(../img/review-background.png);
     background-repeat: no-repeat;
-    z-index: -1;
+    background-position: 0 0;
+    margin-bottom: 153px;
   }
   .reviews__wrapper {
     width: 668px;
@@ -142,8 +147,8 @@
     grid-template-columns: 493px 175px;
     grid-template-rows: min-content min-content min-content min-content;
     margin: 0 auto;
-    margin-bottom: 200px;
     padding: 0 50px;
+    padding-top: 82px;
   }
   .reviews__wrapper::after {
     background-image: url("../img/icon-zigzag-line.svg");
@@ -175,7 +180,7 @@
   }
 
   .reviews__write-wpapper {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
   .reviews__title {
@@ -201,13 +206,19 @@
   .reviews__author-info {
     width: 668px;
     margin: 0;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
     }
   .reviews__author-nick {
     font-size: 17px;
     line-height: 30px;
     font-weight: 400;
     margin: 0;
+  }
+  .reviews__zizzag-line {
+    width: 772px;
+    height: 17px;
+    margin-top: 52px;
+    margin-bottom: 56px;
   }
   .reviews__prev {
     width: 85px;
@@ -218,22 +229,20 @@
 }
 
 @media (min-width: @desktop-width) {
-  .reviews::after{
-    content: "";
-    position: absolute;
-    top: -72px;
-    left: 50px;
-    width: 350px;
+  .reviews__wrapper-img{
+    max-width: 1150px;
     height: 457px;
-    z-index: -1;
+    background-position: 50px 0;
+    margin: 0 auto;
+    margin-bottom: 257px;
   }
   .reviews__wrapper {
     width: 1150px;
     grid-template-columns: 700px 175px;
     grid-template-rows: min-content min-content min-content min-content;
     padding: 0 225px;
+    padding-top: 78px;
     box-sizing: border-box;
-    margin-bottom: 257px;
   }
   .reviews__wrapper::after {
     background-image: url("../img/icon-zigzag-line.svg");
@@ -258,14 +267,13 @@
     color: #000000;
     padding: 0;
   }
+  .reviews__zizzag-line {
+    width: 1050px;
+    height: 23px;
+    margin-top: 73px;
+    margin-bottom: 68px;
+  }
   .reviews__author-info {
     width: 875px;
   }
-  .reviews__write:hover {
-    color: #FFFFFF;
-    }
-  .reviews__write:active {
-    color: rgb(255, 255, 255, 0.3);
-  }
-
 }

@@ -72,6 +72,21 @@
       left: 42px;
     }
   }
+  .video-promo-botton {
+    width: 102px;
+    height: 78px;
+    position: absolute;
+    top: 38%;
+    left: 42%;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
+  }
 
   .video__text {
     width: 400px;
@@ -86,6 +101,7 @@
   }
   .video__preview {
     grid-row: 1/-1;
+    position: relative;
   }
   .make-order {
     width: 584px;
@@ -102,6 +118,7 @@
     margin-bottom: 105px;
     padding: 0;
     width: 1050px;
+    height: 455px;
   }
   .video__text {
     width: 178px;

@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка - интернет-магазин вязаных изделий ручной работы</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header main-header--border">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a href="index.html" class="main-header__link--image">
-          <div class="main-header__logo"></div>
+        <a href="index.html" class="main-header__logo">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="../img/mishka-logo-desktop.svg" width="149" height="72">
+            <source media="(min-width: 768px)" srcset="../img/mishka-logo-tablet.svg" width="113" height="46">
+            <img src="../img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -28,7 +36,7 @@
               <a class="main-nav__link main-nav__link-search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--basket">
-              <svg class="main-nav__item-backet" width="21" height="18" aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path opacity="0.2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z"/></svg>
+              <svg class="main-nav__item-backet" width="21" height="18" aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z"/></svg>
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -113,7 +121,11 @@
                 </ul>
               </div>
               <div class="top-item__product">
-                <img src="img/top-item-product.jpg" width="260" height="315" alt="Товар недели">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="../img/top-item-product-desktop.jpg 1x, ../img/top-item-product-desktop@2x.jpg 2x" width="525" height="636">
+                  <source media="(min-width: 768px)" srcset="../img/top-item-product-tablet.jpg 1x, ../img/top-item-product-tablet@2x.jpg 2x" width="334" height="404">
+                  <img src="../img/top-item-product.jpg" srcset="../img/top-item-product@2x.jpg 2x" width="260" height="315" alt="Товар недели">
+                </picture>
               </div>
               <div class="top-item__price-wrapper">
                 <span class="top-item__price">Цена: 990 руб.</span>
@@ -155,29 +167,31 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы</h2>
-          <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-                у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <div class="reviews__wrapper-img">
+          <div class="reviews__wrapper">
+            <h2 class="reviews__title">Отзывы</h2>
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+                  у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                  и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              </div>
+              <div class="reviews__author-wrapper">
+                <cite class="reviews__author-name">Анастасия Красильникова</cite>
+                <p class="reviews__author-nick">@misssssiskras</p>
+              </div>
+            </blockquote>
+            <div class="reviews__container">
+              <div class="reviews__container-wrapper">
+                <svg class="reviews__container-arrow" width="50" height="26" aria-hidden="true" focusable="false" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/></svg>
+                <button class="visually-hidden" type="button">Предыдущий отзыв</button>
+                <svg class="reviews__container-arrow-right" width="50" height="26" aria-hidden="true" focusable="false" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/></svg>
+                <button class="visually-hidden" type="button">Следующий отзыв</button>
+              </div>
             </div>
-            <div class="reviews__author-wrapper">
-              <cite class="reviews__author-name">Анастасия Красильникова</cite>
-              <p class="reviews__author-nick">@misssssiskras</p>
+            <div class="reviews__write-wpapper">
+            <a class="reviews__write button" href="#">Написать</a>
             </div>
-          </blockquote>
-          <div class="reviews__container">
-            <div class="reviews__container-wrapper">
-              <svg class="reviews__container-arrow" width="50" height="26" aria-hidden="true" focusable="false" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/></svg>
-              <button class="visually-hidden" type="button">Предыдущий отзыв</button>
-              <svg class="reviews__container-arrow-right" width="50" height="26" aria-hidden="true" focusable="false" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/></svg>
-              <button class="visually-hidden" type="button">Следующий отзыв</button>
-            </div>
-          </div>
-          <div class="reviews__write-wpapper">
-          <a class="reviews__write button" href="#">Написать</a>
           </div>
         </div>
       </section>
@@ -189,8 +203,8 @@
             <li class="contacts__address">
               email:
             </li>
-            <li class="contacts__details contacts__details--border">
-              <a class="contacts-email" href="mailto:mail@htmlacademy.ru">info@mimimishkashop.ru</a>
+            <li class="contacts__details">
+              <a class="contacts-email contacts__details--border" href="mailto:mail@htmlacademy.ru">info@mimimishkashop.ru</a>
             </li>
             <li class="contacts__address">
               адрес:
@@ -241,17 +255,30 @@
           </div>
         </div>
         </footer>
-      <div class="modal-order modal-order-close" style="display: none;" >
+      <div class="modal-order modal-order-open" style="display: none;" >
         <div class="modal-order__wrapper">
-          <div class="modal-order__content">
-            <h2 class="modal-order__title">Добавить<br> в корзину</h2>
-            <p class="modal-order__text">Выберите размер:</p>
-          </div>
-          <div class="modal-order-size">
-            <button class="modal-order-size__button modal-order-size__button--active button" type="button">S</button>
-            <button class="modal-order-size__button button" type="button">M</button>
-            <button class="modal-order-size__button button" type="button">L</button>
-            <button class="modal-order-size__add button" type="button">Добавить</button>
+          <div class="modal-order__inner">
+            <div class="modal-order__content">
+              <h2 class="modal-order__title">Добавить в корзину</h2>
+              <p class="modal-order__text">Выберите размер:</p>
+            </div>
+            <form action="https://echo.htmlacademy.ru" method="post" class="modal-order__form">
+              <div class="modal-order-size">
+                <div class="modal-order-size__button modal-order-size__button--active" type="checkbox" name="smoll" checked>
+                  <input type="checkbox" name="smoll" class="visually-hidden checkbox__control" id="smoll-order" checked>
+                  <label for="small-order" class="checkbox__label--size">S</label>
+                </div>
+                <div class="modal-order-size__button" type="checkbox" name="medium">
+                  <input type="checkbox" name="madium" class="visually-hidden checkbox__control" id="medium-order">
+                  <label for="medium-order" class="checkbox__label--size">M</label>
+                </div>
+                <div class="modal-order-size__button" type="checkbox" name="large">
+                  <input type="checkbox" name="large" class="visually-hidden checkbox__control" id="large-order">
+                  <label for="large-order" class="checkbox__label--size">L</label>
+                </div>
+                <button class="modal-order-size__add" type="submit">Добавить</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
