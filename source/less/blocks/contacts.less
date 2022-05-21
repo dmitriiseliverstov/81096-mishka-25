@@ -5,6 +5,8 @@
   width: 320px;
   padding: 0 30px;
   margin: 0 auto;
+  margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .contacts__title {
@@ -13,9 +15,11 @@
   font-weight: 700;
   font-style: normal;
   color: #000000;
+  margin: 0;
+  margin-bottom: 27px;
 }
 .contacts-email {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   font-style: normal;
@@ -36,6 +40,11 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 .contacts__details--border {
@@ -58,8 +67,8 @@
   .contacts-wrapper::before {
     content: "";
     position: absolute;
-    top: -14px;
-    right: 49px;
+    top: -22px;
+    right: 53px;
     width: 47px;
     height: 81px;
     background-image: url(../img/icon-flag.svg);
@@ -67,9 +76,8 @@
   }
   .contacts__block {
   display: grid;
-  grid-template-columns: 75px  225px 75px 234px;
+  grid-template-columns: 77px  256px 77px 234px;
   grid-template-rows: min-content;
-  grid-gap: 20px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -97,6 +105,11 @@
     width: 204px;
     height: 30px;
   }
+  .contacts-email {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+  }
   .contacts__address {
     font-size: 17px;
     line-height: 30px;
@@ -121,7 +134,7 @@
     width: 1150px;
     padding: 0 50px 0 225px;
     margin: 0 auto;
-    margin-bottom: 105px;
+    margin-bottom: 107px;
     position: relative;
   }
   .contacts-wrapper {
@@ -134,7 +147,7 @@
   }
   .contacts-wrapper::before {
     content: "";
-    top: 60px;
+    top: 63px;
     left: -113px;
   }
   .contacts__title {
@@ -143,13 +156,14 @@
     font-weight: 700;
     font-style: normal;
     color: #000000;
-    margin-top: 78px;
+    margin-top: 81px;
+    margin-bottom: 34px;
   }
   .contacts__block {
     display: grid;
     grid-template-columns: 70px  235px;
     grid-template-rows: min-content min-content min-content;
-    grid-gap: 30px 10px;
+    grid-gap: 30px 8px;
     list-style-type: none;
     margin: 0;
     margin-bottom: 18px;

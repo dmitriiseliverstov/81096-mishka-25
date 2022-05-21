@@ -1,11 +1,14 @@
 
 .personal-data {
-  margin-bottom: 55px;
+  margin-bottom: 0;
 }
 .personal-data__wrapper {
   width: 320px;
   margin: 0 auto;
   padding-left: 30px;
+}
+.personal-data__first-wrapper {
+  margin-top: 24px;
 }
 
 .personal-data__full-name {
@@ -36,6 +39,9 @@
   width: 200px;
   background-color: #62D1BA;
 }
+.personal-data__line-container {
+  text-align: left;
+}
 .personal-data__title {
   font-size: 17px;
   line-height: 16px;
@@ -54,8 +60,6 @@
   line-height: 18px;
   font-weight: 700;
   font-style: normal;
-  padding-top: 28px;
-
 }
 
 .personal-data__second {
@@ -84,7 +88,7 @@
   border: none;
   box-sizing: border-box;
   border: 2px solid #444444;
-  padding: 16px;
+  padding: 15px 21px;
 }
 
 .personal-data__note {
@@ -92,7 +96,7 @@
   line-height: 16px;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .personal-data__button:hover {
@@ -121,13 +125,12 @@
 
 .personal-data__container-description {
   padding-top: 22px;
-  margin-bottom: 17px;
+  height: 142px;
 }
 .personal-data__form::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #000000;
   opacity: 0.3;
-  margin-top: 17px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 18px;
   font-weight: 400;
 }
@@ -135,8 +138,7 @@
 .personal-data__form::-moz-placeholder {  /* Firefox 19+ */
   color: #000000;
   opacity: 0.3;
-  margin-top: 17px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 18px;
   font-weight: 400;
 }
@@ -144,8 +146,7 @@
 .personal-data__form:-ms-input-placeholder { /* IE 10+ */
   color: #000000;
   opacity: 0.3;
-  margin-top: 17px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 18px;
   font-weight: 400;
 }
@@ -153,9 +154,7 @@
 .personal-data__form:-moz-placeholder { /* Firefox 18- */
   color: #000000;
   opacity: 0.3;
-  padding-left: 18px;
-  margin-top: 17px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 18px;
   font-weight: 400;
 }
@@ -163,7 +162,6 @@
 
 @media (min-width: @tablet-width) {
   .personal-data__full-name {
-    padding: 50px 0;
     margin: 0 auto;
     border: none;
   }
@@ -175,6 +173,9 @@
     margin: 0 auto;
     padding-left: 50px;
   }
+  .personal-data__first-wrapper {
+    margin-top: 2px;
+  }
   .personal-data__phone {
     background: #F1F1F1;
     margin: 0 auto;
@@ -184,7 +185,6 @@
     display: none;
   }
   .personal-data__additionally {
-    padding: 50px 0;
     border: none;
   }
   .personal-data__title {
@@ -203,6 +203,7 @@
   .personal-data__container-email {
     width: 606px;
     position: relative;
+    margin-bottom: 0;
   }
   .personal-data__container-description {
     width: 501px;
@@ -223,6 +224,9 @@
     font-size: 19px;
     width: 99px;
   }
+  .personal-data__button {
+    width: 230px;
+  }
   .personal-data__form {
     width: 501px;
     margin-left: 98px;
@@ -232,10 +236,11 @@
   .personal-data__container-note {
     display: flex;
     flex-direction: row-reverse;
+    height: 52px;
   }
   .personal-data__note {
     font-size: 17px;
-    margin-left: 109px;
+    margin-left: 136px;
     width: 329px;
   }
   .personal-data {
@@ -269,7 +274,8 @@
 @media (min-width: @desktop-width) {
   .personal-data__wrapper {
     width: 1150px;
-    padding-left:97px;
+    padding: 0;
+    padding-left: 97px;
   }
   .personal-data__additionally {
     display: flex;
@@ -284,18 +290,17 @@
     width: 1150px;
     margin: 0 auto;
   }
+
   .personal-data__form {
-    width: 700px;
-    margin-left: 60px;
-    margin-bottom: 53px;
-  }
-  .personal-data__form {
-    font-family: Open Sans,arial,sans-serif;
+    font-family: Open Sans, arial, sans-serif;
     color: #444444;
     font-weight: 400;
     font-size: 17px;
     line-height: 18px;
     padding: 16px;
+    width: 700px;
+    margin-left: 60px;
+    margin-bottom: 53px;
   }
   .personal-data__form:hover {
     border: 2px solid #62D1BA;
@@ -309,6 +314,7 @@
 
   .personal-data__phone {
     margin: 0 auto;
+    padding: 50px 0;
   }
   .personal-data__container-note {
     margin-left: 128px;
@@ -345,5 +351,6 @@
   }
   .personal-data__title {
     width: 70px;
+    text-align: center;
   }
 }

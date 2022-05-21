@@ -10,7 +10,7 @@
   grid-template-rows: min-content min-content min-content;
   list-style-type: none;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: 0;
 }
 
@@ -25,6 +25,8 @@
   font-style: normal;
   color: #000000;
   cursor: pointer;
+  margin: 0;
+  margin-bottom: 6px;
 }
 
 .card__description {
@@ -33,6 +35,7 @@
   font-weight: 400;
   font-style: normal;
   color: #000000;
+  margin: 0;
 }
 
 .card__text-price {
@@ -41,20 +44,22 @@
   font-weight: 700;
   font-style: normal;
   color: #000000;
-  margin-top: 22px;
-  margin-bottom: 26px;
+  margin: 0;
 }
 
 .card__title {
   border: 1px solid #ECECEC;
   border-bottom: none;
-  padding-left: 28px;
+  padding: 27px 28px 17px 28px;
+}
+.card__title-link {
+  text-decoration: none;
 }
 
 .card__price {
   border: 1px solid #ECECEC;
   border-top: none;
-  padding-left: 28px;
+  padding: 23px 22px 27px 29px;
   position: relative;
 }
 .card__price::after {
@@ -71,13 +76,28 @@
   top: 12px;
   right: 17px;
   padding: 10px;
+  opacity: 0.2;
+  fill: #000000;
+  color: #000000;
+
+  &:hover {
+    opacity: 1;
+    fill: #63D1BB;
+    color: #63D1BB;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: #63D1BB;
+    color: #63D1BB;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .card {
     grid-template-columns: 334px 335px;
     grid-template-rows: 260px min-content;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
   .card__wrapper {
     width: 768px;
@@ -90,17 +110,23 @@
   .card__text {
     font-size: 20px;
     line-height: 24px;
+    max-width: 242px;
+  }
+  .card__description {
+    font-size: 15px;
+    line-height: 30px;
+
   }
   .card__title {
     border-left: none;
     border-bottom: none;
-
+    padding: 28px 28px 17px 32px;
     }
   .card__price {
     grid-column: 2/2;
     border: 1px solid #ECECEC;
     border-top: none;
-    border-left: none;
+    padding: 26px 22px 25px 34px;
   }
   .card__price--add-cart {
     right: 22px;
@@ -115,11 +141,14 @@
     height: 1px;
     position: absolute;
     content: "";
-    top: 0;
+    top: 1px;
     right: 33px;
   }
   .card__text-price {
-    margin: 24px 0;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
   }
 }
 
@@ -135,7 +164,7 @@
   .card {
     grid-template-columns: 316px;
     grid-template-rows: min-content min-content min-content;
-    margin-bottom: 57px;
+    margin-bottom: 0;
 
     &:hover {
       outline: 1px solid #ECECEC;
@@ -149,9 +178,9 @@
   .card__title {
     border: 1px solid #ECECEC;
     border-bottom: none;
-    padding-left: 28px;
+    padding: 28px 28px 0 28px;
     grid-row: 2;
-    min-height: 126px;
+    min-height: 94px;
   }
   .card__title-link {
 
@@ -170,8 +199,12 @@
   .card__price {
     grid-column: 1;
     grid-row: 3;
-    border: 1px solid #ECECEC;
+    padding: 25px 22px 25px 31px;
     border-top: none;
+  }
+  .card__price--add-cart {
+    right: 20px;
+    top: 15px;
   }
   .card__text {
     margin-bottom: 6px;

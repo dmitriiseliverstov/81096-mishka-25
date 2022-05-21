@@ -28,7 +28,7 @@
   padding: 0;
   margin: 0;
   border: none;
-  margin-bottom: 31px;
+  margin-bottom: 7px;
 }
 
 .form-order__title {
@@ -42,22 +42,23 @@
 }
 .form-order__list {
   padding: 0;
-  padding-top: 25px;
   margin: 0;
+  margin-top: -7px;
   list-style-type: none;
 }
 .form-order__list-type{
   padding: 0;
-  padding-top: 30px;
   margin: 0;
   list-style-type: none;
 }
 
 .form-order__item {
+  width: 38px;
+  height: 38px;
   margin-bottom: 24px;
 }
 .form-order__item-type {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 .form-order__color {
   border: none;
@@ -66,7 +67,7 @@
 .control {
   position: relative;
   display: block;
-  padding: 9px 0 10px 60px;
+  padding-left: 60px;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -84,8 +85,8 @@
 .control-input[type="radio"]:checked + .control-mark::before,
 .control-input[type="radio"]:checked + .control-mark::after {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 9px;
+  left: 9px;
   width: 18px;
   height: 18px;
   background-color: #62D1BA;
@@ -99,19 +100,20 @@
   background-image: url("../img/icon-checkbox.svg");
   width: 24px;
   height: 17px;
-  top: 12px;
-  left: 8px;
+  top: 10px;
+  left: 7px;
   content: "";
 }
 
 .control-mark {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   background: #FFFFFF;
   border: 2px solid #444444;
+  box-sizing: border-box;
 }
 .control-mark:hover {
   border: 2px solid #62D1BA;
@@ -121,6 +123,7 @@
 }
 
 .control-label {
+  width: 200px;
   display: inline-block;
   font-size: 17px;
   line-height: 18px;
@@ -141,7 +144,7 @@
     display: none;
   }
   .form-order__color {
-    padding: 50px 0;
+    padding: 50px 0 26px 0;
     background: #F1F1F1;
   }
   .form-order__list {
@@ -155,34 +158,36 @@
   .form-order__type {
     display: flex;
     flex-direction: row;
-    padding: 63px 0 50px 0;
+    padding: 63px 0 33px 0;
     margin: 0;
   }
   .form-order__title {
-    margin-top: 18px;
+    margin-top: 14px;
     width: 74px;
   }
   .form-order__item {
     margin-bottom: 24px;
-    width: 239px;
+    width: 261px;
+    height: 52px;
   }
   .form-order__item:last-child {
     margin-bottom: 0;
   }
   .form-order__list-type{
-    margin-left: 103px;
+    margin-left: 93px;
     padding-top: 0;
   }
   .form-order__item-type {
-    margin-bottom: 40px;
+    margin-bottom: 17px;
   }
   .control-label {
     font-size: 19px;
+    width: 450px;
   }
   .control-mark {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1px;
     width: 52px;
     height: 52px;
     background: #F1F1F1;
@@ -203,13 +208,13 @@
   background-repeat: no-repeat;
   width: 32px;
   height: 22px;
-  top: 16px;
-  left: 12px;
+  top: 18px;
+  left: 11px;
   }
   .control {
     position: relative;
     display: block;
-    padding: 14px 0 14px 78px;
+    padding: 14px 0 14px 82px;
   }
 }
 
@@ -223,18 +228,24 @@
   }
   .form-order__list-type {
     margin-left: 63px;
+    margin-bottom: 28px;
   }
   .form-order__list {
-    margin-left: 55px;
+    margin-left: 62px;
     width: 69%;
+    margin-top: -3px;
+  }
+  .form-order__type {
+    padding: 0;
+
   }
   .form-order__color {
-    padding: 50px 0;
     background: #F1F1F1;
   }
   .form-order__title {
     margin-top: 18px;
     width: 65px;
+    text-align: center;
   }
   .form-order__item {
     margin-bottom: 24px;

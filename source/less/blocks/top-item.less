@@ -6,6 +6,7 @@
   margin: 0 auto;
   margin-bottom: 73px;
   padding: 0 30px;
+  box-sizing: border-box;
 }
 .top-item__conteiner::after {
   position: absolute;
@@ -15,13 +16,19 @@
   background-size: 320px 100%;
   width: 100%;
   height: 6px;
-  bottom: -37px;
+  bottom: -40px;
   left: 0;
   display: block;
   content: "";
 }
+.top-item__wrapper {
+  margin-bottom: 10px;
+}
 .top-item__description-wrapper {
   width: 260px;
+}
+.top-item__description-container {
+  margin-bottom: 40px;
 }
 
 .top-item__title {
@@ -30,7 +37,6 @@
   line-height: 30px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 3px;
 }
 
 .top-item__week {
@@ -40,6 +46,10 @@
   color: #63D1BB;
   margin: 0;
   margin-bottom: 18px;
+}
+.top-item__text {
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .top-item__description {
@@ -115,17 +125,9 @@
 
   }
   .top-item__conteiner::after {
-    position: absolute;
-    background-image: url("../img/icon-zigzag-line.svg");
-    background-position: center;
-    background-repeat: repeat-x;
     background-size: 768px 100%;
-    width: 100%;
     height: 17px;
-    bottom: -37px;
-    left: 0;
-    display: block;
-    content: "";
+    bottom: -68px;
   }
   .top-item__wrapper {
     width: 668px;
@@ -133,6 +135,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 48px;
   }
 
   .top-item__description-wrapper {
@@ -163,22 +166,20 @@
     line-height: 50px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 38px;
-    margin-right: 106px;
   }
   .top-item__product {
     height: 404px;
   }
   .top-item__week {
     display: flex;
-    width: 100px;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 700;
-    color: #63D1BB;
+    width: 127px;
     text-align: center;
     margin: 0;
-    margin-bottom: 18px;
+  }
+  .top-item__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 31px;
   }
   .top-item__text {
     font-size: 17px;
@@ -189,6 +190,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 48px;
+    margin-top: -11px;
   }
 }
 
@@ -249,6 +251,7 @@
 
   .top-item__text {
     margin-bottom: 60px;
+    margin-top: 0;
   }
   .top-item__price {
     font-size: 20px;
