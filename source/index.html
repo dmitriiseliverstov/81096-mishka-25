@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка - интернет-магазин вязаных изделий ручной работы</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../img/favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
@@ -20,7 +20,7 @@
             <img src="../img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин">
           </picture>
         </a>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка выпадающего меню"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__list-one">
             <li class="main-nav__item">
@@ -32,11 +32,15 @@
           </ul>
           <ul class="main-nav__list main-nav__list-two">
             <li class="main-nav__item main-nav__item--search">
-              <svg class="main-nav__item-search" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="m17.7 16-3.5-3.4A7.8 7.8 0 0 0 8 0 7.8 7.8 0 0 0 0 7.9c0 4.4 3.5 7.8 7.9 7.8 1.7 0 3.3-.6 4.7-1.5l3.5 3.5c.2.2.4.3.8.3.6 0 1.1-.5 1.1-1.1l-.3-.8ZM2.3 8c0-3 2.5-5.7 5.6-5.7 3 0 5.6 2.6 5.6 5.7 0 3-2.6 5.6-5.6 5.6-3 0-5.7-2.6-5.7-5.6Z"/></svg>
+              <svg aria-hidden="true" width="18" height="18" class="main-nav__item-search">
+                <use href="../img/sprite.svg#icon-search"/>
+              </svg>
               <a class="main-nav__link main-nav__link-search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--basket">
-              <svg class="main-nav__item-backet" width="21" height="18" aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z"/></svg>
+              <svg aria-hidden="true" width="21" height="18" class="main-nav__item-backet">
+                <use href="../img/sprite.svg#icon-cart"/>
+              </svg>
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -55,13 +59,11 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="visually-hidden">Мишка – милые штучки ручной работы для дома</h1>
+      <h1 class="visually-hidden">Главная страница сайта</h1>
       <section class="preview">
         <div class="preview__wrapper">
           <header class="preview__header">
-            <h2 class="preview__name">
-              Милые штуки ручной<br> работы для дома
-            </h2>
+            <h2 class="preview__name">Милые штуки ручной<br> работы для дома</h2>
           </header>
         </div>
       </section>
@@ -71,7 +73,9 @@
             <a href="#" class="categories__link">
               <p class="categories__name-wrapper">
               <span class="categories__name">Предметы интерьера</span>
-              <svg class="categories__name-svg-interior" width="41" height="62" aria-hidden="true" focusable="false" viewBox="0 0 41 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g opacity=".5" fill="#149080"><path d="M15.5 37.7c-.3 1-.2 2.1 0 3.5.5 2.6 1.7 6 2.5 9.7h5.2c.7-3.6 1.9-7 2.5-9.7a7 7 0 0 0 0-3.5c-.3-1-1-1.6-2-2.3h-6.2c-1.2.7-1.8 1.4-2 2.3ZM27.5 57.5h-14c-1.4 0-2.4 1-2.4 2.2V62H30v-2.2c0-1.2-1-2.2-2.4-2.2ZM34.8 2.2h-12c0-1.2-1-2.2-2.3-2.2-1.3 0-2.3 1-2.3 2.2h-12L0 27.5a5 5 0 0 1 2.7-1c1.4 0 2.2.8 3 1.4.6.6 1.1.8 1.3.8.3 0 .9-.3 1.6-.8.7-.5 1.6-1.4 3-1.4 1.3 0 2.2.8 2.9 1.4.7.5 1.2.8 1.5.8l.6-.2c.2 0 .5-.4 1-.6.5-.4 1-1 2-1.2h.9c1.3 0 2.2.7 3 1.3.7.5 1.2.8 1.5.8.3 0 .8-.3 1.4-.8.7-.6 1.6-1.4 3-1.4s2.2.8 3 1.4c.2.3.5.5.8.6l.7.2c.3 0 .8-.3 1.4-.9.7-.6 1.6-1.4 3-1.4 1 0 1.8.5 2.6 1L34.8 2.2ZM24 53h-7c-.8 0-1.2.6-1.2 1.1 0 .6.5 1.1 1.1 1.1h7c.8 0 1.2-.5 1.2-1 0-.6-.4-1.1-1.1-1.1Z"/><path d="m20.5 28.7-.6.2-.6.4V33h2.3v-3.6c-.5-.4-.9-.7-1.1-.7Z"/></g></svg>
+              <svg aria-hidden="true" width="41" height="62" class="categories__name-svg-interior">
+                <use href="../img/sprite.svg#icon-interior"/>
+              </svg>
               </p>
             </a>
           </li>
@@ -81,7 +85,9 @@
             <a href="#" class="categories__link">
               <p class="categories__name-wrapper">
               <span class="categories__name"> Детские игрушки</span>
-              <svg class="categories__name-svg-toys" width="61" height="61" aria-hidden="true" focusable="false" viewBox="0 0 61 61" fill="#149080" xmlns="http://www.w3.org/2000/svg"><path opacity=".5" d="M0 44.7 27.9 61V37.2L0 20.8v24Zm52.2-32v2.6c0 1.8-3.6 3.3-7.9 3.3-4.3 0-7.8-1.5-7.8-3.4v-4.1c.3 1.7 3.7 3.1 7.8 3.1 4.4 0 7.9-1.5 7.9-3.4 0-1.8-3.6-3.3-7.9-3.3h-1l-5-3v3.2c0 1.8-3.6 3.4-7.9 3.4-2.7 0-5-.7-6.5-1.6l-.7-.6c-.4-.4-.6-.8-.6-1.2v-3l-5 2.8h-1c-4.4 0-7.9 1.5-7.9 3.3 0 1.9 3.6 3.4 7.9 3.4 4.1 0 7.5-1.4 7.8-3.1v4.2c0 1.8-3.6 3.3-7.8 3.3-4.4 0-7.9-1.5-7.9-3.4v-2.4l-6 3.6 27.9 16.4 27.9-16.3-6.3-3.8ZM38.3 23c0 1.9-3.5 3.4-7.8 3.4-4.4 0-7.8-1.5-7.8-3.4V19c.3 1.8 3.6 3.2 7.8 3.2 4.2 0 7.5-1.4 7.8-3.2v4.2Zm-5.2 14.3V61L61 44.7V21.1L33.1 37.4ZM30.4 6.8c4.4 0 7.8-1.6 7.8-3.4 0-1.9-3.5-3.4-7.8-3.4-4.4 0-7.8 1.5-7.8 3.4 0 1.8 3.4 3.4 7.8 3.4Z"/></svg>
+              <svg aria-hidden="true" width="61" height="61" class="categories__name-svg-toys">
+                <use href="../img/sprite.svg#icon-toy"/>
+              </svg>
               </p>
             </a>
           </li>
@@ -140,27 +146,39 @@
           <h2 class="advantages__title">Коротко о нас:</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--ecology">
-              <svg class="advantages-svg advantages-svg--flower" width="33" height="38" aria-hidden="true" focusable="false" viewBox="0 0 33 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 38c9 0 16.5-7.4 16.5-16.3-9 0-16.5 7.2-16.5 16.3ZM4.7 16.7c0 2.5 2.1 4.4 4.6 4.4 1 0 1.8-.3 2.6-.8v.3c0 2.6 2 4.5 4.5 4.5 2.6 0 4.5-2 4.5-4.5v-.3c.8.5 1.7.8 2.6.8 2.6 0 4.6-2 4.6-4.4 0-1.9-1-3.4-2.6-4.1A4.4 4.4 0 0 0 28 8.5C28 5.9 26 4 23.5 4c-1 0-1.8.3-2.6.8v-.3C21 1.9 19 0 16.4 0c-2.6 0-4.5 2-4.5 4.5v.3C11 4.3 10.2 4 9.3 4 6.7 4 4.7 6 4.7 8.5c0 1.8 1 3.3 2.6 4a4.6 4.6 0 0 0-2.6 4.2ZM16.5 8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 1 1 0-9ZM0 21.7C0 30.7 7.4 38 16.5 38c0-9-7.4-16.3-16.5-16.3Z"/></svg>
-              <p class="advantages__description">Экологически чистые материалы</p>
+              <svg aria-hidden="true" width="33" height="38" class="advantages-svg advantages-svg--flower">
+                <use href="../img/sprite.svg#icon-advantages-flower"/>
+              </svg>
+              <p class="advantages__description">Экологически<br> чистые материалы</p>
             </li>
             <li class="advantages__item advantages__item--style">
-              <svg class="advantages-svg advantages-svg--money" width="47" height="27" aria-hidden="true" focusable="false" viewBox="0 0 47 27" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M43 0H4C1.6 0 0 1.7 0 3.9V23C0 25.3 1.7 27 4 27h39c2.3 0 4-1.7 4-3.9V4A4 4 0 0 0 43 0ZM3 24.7v-22h40.6v22H3Z" fill="#63D1BB"/><path d="M7 20.9h32.6V6.6H7V21ZM23.5 8.5c3 0 5.3 2.4 5.3 5.2a5.3 5.3 0 0 1-10.7 0c0-3 2.5-5.2 5.4-5.2Z"/></svg>
-              <p class="advantages__description">Скандинавский стиль по российской цене</p>
+              <svg aria-hidden="true" width="47" height="27" class="advantages-svg advantages-svg--money">
+                <use href="../img/sprite.svg#icon-advantages-money"/>
+              </svg>
+              <p class="advantages__description">Скандинавский стиль<br> по российской цене</p>
             </li>
             <li class="advantages__item advantages__item--likes">
-              <svg class="advantages-svg advantages-svg--likes" width="34" height="27" aria-hidden="true" focusable="false" viewBox="0 0 34 27" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M34 8.4C34 3.8 30 0 25 0c-3.5 0-6.5 2-8 4.7A9.1 9.1 0 0 0 9 0C4 0 0 3.8 0 8.4 0 17.3 15.1 27 17 27c2 0 17-9.6 17-18.6Z"/></svg>
-              <p class="advantages__description">Увеличивает лайки на фотографиях</p>
+              <svg aria-hidden="true" width="34" height="27" class="advantages-svg advantages-svg--heart">
+                <use href="../img/sprite.svg#icon-advantages-heart"/>
+              </svg>
+              <p class="advantages__description">Увеличивает лайки<br> на фотографиях</p>
             </li>
             <li class="advantages__item advantages__item--hands">
-              <svg class="advantages-svg advantages-svg--clew" width="35" height="34" aria-hidden="true" focusable="false" viewBox="0 0 35 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.3 14a16 16 0 0 0 0 6.2L4.5 17 .3 14ZM24.9 1.6A18 18 0 0 0 9.3 2l7.6 5.5 8-6ZM34.5 13l-4.9 3.7 5 3.7c.5-2.4.5-5 0-7.3ZM9.4 32a17.8 17.8 0 0 0 16 .2l-8.3-6L9.4 32ZM8 14.2 1.7 9.7l-.8 2 5.4 4L8 14.2ZM19 24.8l8.4 6.2.8-.6 1-.8-8.5-6.2-1.8 1.4ZM11.6 11.6 4.1 6c-.5.5-1 1.1-1.3 1.7l7 5.2 1.8-1.4ZM22.5 22.2l8.3 6c.5-.5.9-1 1.3-1.7l-7.9-5.7-1.7 1.4ZM15.2 9 7.3 3.1c-.2 0-.4.3-.6.4l-1.1 1 7.8 5.6 1.8-1.3ZM26 19.4l7.2 5.1 1-2-6.3-4.5-1.8 1.4ZM26.9 2.7.9 22.4l.8 2L28.7 4c-.5-.5-1.1-1-1.8-1.3ZM31.3 6.5c-.3-.4-.6-.8-1-1L3 26.1c.2.5.5 1 .8 1.2 0 .2.3.4.4.5L31.8 7.1l-.5-.6ZM32.9 9 5.7 29.4l1.7 1.4 26.5-20-1-2Z"/></svg>
+              <svg aria-hidden="true" width="35" height="34" class="advantages-svg advantages-svg--clew">
+                <use href="../img/sprite.svg#icon-advantages-clew"/>
+              </svg>
               <p class="advantages__description">Связано вручную с любовью и умилением</p>
             </li>
             <li class="advantages__item advantages__item--support">
-              <svg class="advantages-svg advantages-svg--rocket" width="55" height="23" aria-hidden="true" focusable="false" viewBox="0 0 55 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M41 5.8a47.8 47.8 0 0 0-20.4-1.1L13.7 0H.2L6 6.1h8.5c-4.7 1.6-7 3.5-7 3.5v3.8s2.4 1.9 7 3.5H6L0 23h13.6l7-4.7a46 46 0 0 0 20.2-1c-1.2-1.8-1.9-3.7-1.9-5.9.1-2 1-3.9 2-5.6ZM44.5 6.7a7.6 7.6 0 0 0-2 4.8c0 1.6.7 3.2 2 4.8C51 14 55 11.5 55 11.5s-4-2.6-10.5-4.8Z"/></svg>
+              <svg aria-hidden="true" width="55" height="23" class="advantages-svg advantages-svg--rocket">
+                <use href="../img/sprite.svg#icon-advantages-rocket"/>
+              </svg>
               <p class="advantages__description">Поддержка отечественного производителя</p>
             </li>
             <li class="advantages__item advantages__item--gift">
-              <svg class="advantages-svg advantages-svg--present" width="33" height="32" aria-hidden="true" focusable="false" viewBox="0 0 33 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 32h12.6V18.3H3V32ZM31.4 8.7H24l1.4-.8c1.6-1 2.5-2.6 2.5-4 0-1.1-.7-2.1-1.5-2.8-.8-.7-1.9-1.1-3-1.1-1.2 0-2.4.4-3.3 1-1.5 1-2.6 2.6-3.4 4.1l-.1.2-1-1.7c-.8-1-1.6-2-2.6-2.5C12 .5 11 0 9.7 0a5 5 0 0 0-3.2 1.3C5.7 2 5 3.2 5 4.3c0 .7.2 1.5.7 2.2.6 1 1.4 1.6 2.6 2.2H1.6c-.9 0-1.6.7-1.6 1.6V16h15.5V8.7h2V16H33v-5.8c0-1-.7-1.6-1.6-1.6ZM8.9 6.4l-1.2-1-.3-1c0-.5.2-1 .7-1.5.4-.4 1-.7 1.6-.7.7 0 1.4.2 2 .7 1 .7 2 1.7 2.6 3.1l.8 2.1A15 15 0 0 1 9 6.4Zm10.6-1.6C20 4 20.7 3.4 21.4 3c.7-.5 1.4-.7 2-.7.6 0 1.1.2 1.5.5.4.3.6.7.6 1.2 0 .4-.3 1.2-1.5 2-1 .8-3.1 1.7-6.1 2.3.3-1.2.9-2.5 1.6-3.5Zm-2 27.2H30V18.3H17.5V32Z"/></svg>
+              <svg aria-hidden="true" width="33" height="32" class="advantages-svg advantages-svg--present">
+                <use href="../img/sprite.svg#icon-advantages-present"/>
+              </svg>
               <p class="advantages__description">Поставляется в подарочной упаковке</p>
             </li>
           </ul>
@@ -183,9 +201,13 @@
             </blockquote>
             <div class="reviews__container">
               <div class="reviews__container-wrapper">
-                <svg class="reviews__container-arrow" width="50" height="26" aria-hidden="true" focusable="false" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/></svg>
+                <svg aria-label="Предыдущий отзыв" width="50" height="26" class="reviews__container-arrow">
+                  <use href="../img/sprite.svg#huge-arrow"/>
+                </svg>
                 <button class="visually-hidden" type="button">Предыдущий отзыв</button>
-                <svg class="reviews__container-arrow-right" width="50" height="26" aria-hidden="true" focusable="false" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/></svg>
+                <svg aria-label="Следующий отзыв" width="50" height="26" class="reviews__container-arrow-right">
+                  <use href="../img/sprite.svg#huge-arrow"/>
+                </svg>
                 <button class="visually-hidden" type="button">Следующий отзыв</button>
               </div>
             </div>
@@ -223,24 +245,32 @@
         <div class="main-footer__wrapper">
           <div class="main-footer__logo-wrapper">
             <a class="main-footer__logo" href="index.html">
-              <svg class="main-footer__logo-image" aria-hidden="true" focusable="false" width="102" height="34" viewBox="0 0 102 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19.2 21.4c0-2.7-.5-5.3-.5-8 0-2.2.4-4.4-.4-6.4l.1-.7c.2-1-3.3-.5-3.8.5-.3.3-.5.6-.4 1l.1.3c-.7 3.1-1.6 6.2-2.6 9.3l-1.3 3.5c-.6-1.1-1.2-2.2-1.6-3.4-1.4-3.4-2.6-6.9-4.3-10.1.2-1.5-3.2-1.4-3.9 0a8.3 8.3 0 0 0-.4 5.1c.3 2 .4 4 .4 6.1 0 4 .4 7.9.4 11.8-.4.4-.5 1 0 1.4l.5.5c1 .7 3.6.1 3.6-1.3 0-4-.3-8.1-.4-12.3v-1.2l.2.4c.6 1.6 1.3 3.2 2.2 4.7 1 1.5 1.3 3 1.8 4.6-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.5 1.8.3 2.5 0 .3 0 .6-.3.8-.4.3-.2 1-.7.7-1.1v-.3l1-4c.2-1.3.7-2.7 1.2-4l.2 1.9c.2 2.6 0 5 0 7.5l.2 2.5c.1.3.4 1.8.3 2-.8.4-.6 1 .2 1.2 1 .2 2.1 0 2.8-.7 1.2-1 .6-2.8.4-4.2-.5-2.3 0-5 0-7.3ZM27.6 22c0-2-.8-3.8-.8-5.8 0-2.3.2-4.6-.2-6.9 0-.6-4 .1-3.9 1 .3 2.1.2 4.2.2 6.4 0 2 .5 3.9.7 5.9.3 2 0 4.2.1 6.1.1 1 .8 2.7.1 3.6-.4.5 1.5.3 1.6.3.8 0 1.8-.4 2.3-1 .7-.8.2-2.4.1-3.4-.3-2 0-4.1-.2-6.1ZM44 18.8c-2.2-2.8-6-.8-8.7-1.5C34 16.9 34 15 34 13.9a28 28 0 0 0-.3-4c0-1.1 0-2.1.7-3l.8-.2 1.1-.1c1.5-.1 4.6.2 4 2.4-.3 1 3.6.4 4-.5 1.1-4.6-7.4-3.7-9.8-3.1-2.2.6-4.6 1.8-4.8 4.3l.3 3.6c.1 1.4-.2 2.8.3 4.1 1.1 3 5.5 1.6 7.8 1.7 3.8.3 2.7 5.5 2.7 7.9 0 1.2 1.2 3.3.2 4.4-.6.7-2 .7-2.8.8-.8.1-2.2.3-2.7-.5-1-1.4.1-3.8 0-5.3-.2-1-4.2-.1-4 1 .3 2.5-1.4 6 2.4 6.5 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.9 3.2-1.8 1-.9.7-2.3.4-3.5-.5-3 1-6.4-1-8.9ZM61.3 18.6c0-3.8-.7-7.5-.7-11.2 0-2-4-1.3-4 .3 0 3.5.5 7.1.7 10.7v.2l-5.9.2c.2-4.6-.6-9.2-.4-13.8 0-.6-3.9-.1-3.9 1-.2 4.4.6 8.8.5 13.3l-.3 6.4.3 3.2c.1 1 .5 2.3.2 3.3-.2.8 3.6.3 4-.7.4-1.8-.3-4-.5-5.7-.2-1.7 0-3.5.1-5.2 2-.1 4.1-.3 6.1 0l.3 4 .2 3.5c0 1 .1 2.5-.2 3.5-.8 2.1 3.1 2 3.7.4.7-1.9.5-4.2.4-6.1-.2-2.5-.6-5-.6-7.3ZM78.2 23c-.9-2.8-2.4-5.2-3.6-7.8l3-5.9c.7-1.7 1.3-3.7 3-5 .6-.4.6-1-.3-1-.9-.1-2 .2-2.8.7a12.1 12.1 0 0 0-3 4.4l-3 6c0 .1 0 .3-.2.4-.5.3-.8.8-.6 1.3l-2.5 4.6c-.3-5.5-1-11-1.2-16.5 0-1.3-4-.5-3.9 1 .2 6.8 1.2 13.6 1.3 20.5-.3.4-.2.6.1.7 0 1.7 0 3.4-.2 5.2-.5.7.5 1.1 1.1 1.1h.1c.7 0 2.6-.3 2.7-1.4.2-2 .3-4.2.2-6.2a32 32 0 0 0 4.1-5.6c.8 1.5 1.5 3 2 4.6 1 2.7 2.3 5.2 3.1 8 .5 1.7 4.5.6 4-1-1-2.9-2.5-5.3-3.4-8.1ZM101.7 18.4c-.2-.8-1.4-.8-2.3-.8v-1c0-2.7-.2-5.4-.4-8-.2-2.4-1.6-3.2-4-3.1-2.4 0-5.2.5-7.5 1.4a7 7 0 0 0-4.6 5.6c-.5 3 .2 6.2.4 9.2.2 3.5.1 7 .1 10.4 0 .6 4 0 4-1V23l-.2-2.4c1.4-.6 3.7 0 5.1 0 1.1.2 2.2-.1 3.2-.2l.2 6.8c0 1.2.5 3.5-.4 4.5-.4.5 1.5.3 1.6.3.8 0 1.8-.4 2.3-1 1-1 .5-3.8.4-5v-5.7c1-.2 2.3-1 2.1-1.8Zm-14.6-.1-.3-3.7c-.2-2.3.1-5.5 2.3-7 .6-.3 1.7-.2 2.4-.3 1-.2 2-.4 2.8.2 1.2.8 1 3.6 1 4.8l.2 6-1.7.1c-2.3-.2-4.6-.6-6.7-.1ZM24.2 6.7c.5-.1 1-.2 1.5-.5L26 6c.5-.3 1-.8.7-1.4-.5-1.1-.4-2.2-.4-3.4 0-1-1-1.2-1.8-1.2-.7.1-2.2.6-2.2 1.5l.1 3v.4c-.2.2 0 .4 0 .6V6l.4.5a3 3 0 0 0 1.5.3Z"/></svg>
+              <svg aria-label="логотип сайт в подвале" width="102" height="34" class="main-footer__logo-image">
+                <use href="../img/sprite.svg#mishka-logo-tablet"/>
+              </svg>
             </a>
           </div>
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg width="28" height="23" aria-hidden="true" focusable="false" viewBox="0 0 28 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.8c0-.8.5-1.3 1.5-1.3h4c.3 0 .5.1.5.4L8.4 8a39.7 39.7 0 0 0 2.4 3.4s.2 0 .2-.2l.1-.3V6.7c0-.3 0-.5-.2-.6l-.8-.2c-.3 0-.5-.3-.5-.6v-.1c.4-1.1 1.5-1.7 3.2-1.7h1.5c.7 0 1.3.2 1.7.5.4.3.7.8.7 1.5v5.7l.3.1c.3 0 .5-.1.7-.4A17.7 17.7 0 0 0 21 5.6l.6-.7.8-.4H26.9c.4 0 .7.2.8.5l.2.3a2.4 2.4 0 0 1 0 .6V6c0 .7-.4 1.5-.9 2.2-.5.8-1.1 1.7-2 2.6a27.6 27.6 0 0 0-1.6 2.3c0 .1 0 .3.2.5l3.9 4.6c.2.3.3.5.3.9s-.2.7-.5 1a2 2 0 0 1-1.1.3h-4.6l-.1.1c-.4 0-.8-.2-1.1-.5a241.3 241.3 0 0 1-3-3.3A38.5 38.5 0 0 0 17 19l-.1.4c-.2.6-.6 1-1.1 1h-3c-1.5 0-3-.6-4.4-1.8-1.5-1.3-2.8-3-4-5A47.5 47.5 0 0 1 1 5.8Zm16 6.6c-.4 0-.7-.1-1-.3a.9.9 0 0 1-.5-.8V5.5c0-.3 0-.6-.2-.7-.2-.2-.5-.2-1-.2h-1.5c-.7 0-1.3.1-1.7.4.8.3 1.2 1 1.2 1.7V11c0 .4-.2.8-.6 1-.3.3-.6.5-1 .5-.6 0-1-.3-1.3-.8-1.3-2-2.4-3.8-3-5.6L6 5.6H2.2v.7l.6 1.4a33 33 0 0 0 4.8 8.6c1.8 2 3.5 3.1 5.2 3.1h2.9l.1-.4v-.3l.6-2.2.3-.6c.2-.2.5-.3.7-.3.5 0 .9.3 1.3.8L21 19c.2.2.3.3.5.3h4.4c.5 0 .8-.1.8-.4l-.1-.2-3.9-4.6c-.3-.3-.4-.7-.4-1 0-.5.1-.9.4-1.3l1.3-1.6L25.8 8c.5-.7.8-1.3 1-1.9V5.6h-4.2c-.3 0-.5.2-.6.4l-.2.5c-.4 1.1-1.6 3-3.5 5.3-.4.4-.8.6-1.3.6Z"/></svg>
+                  <svg aria-label="сайт vkontakte" width="28" height="23">
+                    <use href="../img/sprite.svg#icon-vkontakte"/>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <svg width="28" height="23" aria-hidden="true" focusable="false" viewBox="0 0 28 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m17.9 11.3-5.3-3.5a.7.7 0 0 0-1 .5v7a.7.7 0 0 0 1 .6l5.3-3.5a.7.7 0 0 0 0-1.1Zm-5 2.8V9.6l3.4 2.2-3.4 2.3Zm12.5-8.6A2.4 2.4 0 0 0 23.9 4c-3.7-1.4-9.6-1.4-9.9-1.4-.3 0-6.2 0-10 1.4a2.4 2.4 0 0 0-1.4 1.6c-.3 1.1-.6 3-.6 6.3s.3 5.3.6 6.3a2.4 2.4 0 0 0 1.5 1.7c3.7 1.4 9.6 1.4 9.9 1.4.8 0 6.4 0 10-1.4a2.4 2.4 0 0 0 1.4-1.7c.3-1 .6-3 .6-6.3 0-3.2-.3-5.2-.6-6.3ZM24 17.8a1 1 0 0 1-.6.7C20 20 14 20 14 20c0 0-6 0-9.5-1.4a1 1 0 0 1-.6-.7c-.3-1-.6-2.8-.6-6 0-3 .3-5 .6-6a1 1 0 0 1 .6-.7C8 3.8 14 3.8 14 3.8c0 0 6 0 9.5 1.3a1 1 0 0 1 .6.8c.3 1 .6 2.8.6 6 0 3-.3 4.9-.6 6Z"/></svg>
+                  <svg aria-label="сайт youtube" width="28" height="23">
+                    <use href="../img/sprite.svg#icon-youtube"/>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                  <svg width="28" height="23" aria-hidden="true" focusable="false" viewBox="0 0 28 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m23.5 3.7.2.6L21 20a.7.7 0 0 1-1 .5l-8-5.3a.7.7 0 0 1 0-1l2.5-3.2-4.3 2.9h-.7l-5.2-2.6a.7.7 0 0 1 0-1.2l18.4-6.6c.2 0 .5 0 .7.2ZM6.3 10.8l3.6 1.8 7.5-5a.7.7 0 0 1 .9 1l-4.8 6 6.4 4.2 2.3-13.6-15.9 5.6Z"/></svg>
+                  <svg aria-label="приложение telegram" width="28" height="23">
+                    <use href="../img/sprite.svg#icon-telegram"/>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -249,7 +279,9 @@
             <div class="copyright-wrapper">
               <span class="copyright__text">Разработано</span>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg class="copyright__logo" alt="HTML Academy" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
+                <svg aria-label="сайт htmlacademy" width="27" height="35" class="copyright__logo">
+                  <use href="../img/sprite.svg#icon-htmlacademy"/>
+                </svg>
               </a>
             </div>
           </div>
