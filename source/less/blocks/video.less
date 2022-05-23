@@ -1,11 +1,13 @@
-.video {
+.video-wrapper {
   display: grid;
   grid-template-columns: 260px;
   grid-template-rows: min-content min-content min-content;
   list-style-type: none;
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
   width: 260px;
+  border: 1px solid #ececec;
+  margin-bottom: 54px;
 }
 .video__title {
   position: relative;
@@ -56,12 +58,11 @@
   margin-bottom: 41px;
 }
 @media (min-width: @tablet-width) {
-  .video {
+  .video-wrapper {
     grid-template-columns: 668px;
     grid-template-rows: min-content min-content min-content;
     list-style-type: none;
-    margin: 0;
-    margin-bottom: 54px;
+    margin-bottom: 64px;
     padding: 0;
     width: 668px;
   }
@@ -101,7 +102,7 @@
   }
   .video__promo-text {
     padding: 0 41px;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
   .video__preview {
     grid-row: 1/-1;
@@ -109,16 +110,14 @@
   }
 }
 @media (min-width: @desktop-width) {
-  .video {
+  .video-wrapper {
     grid-template-columns: 682px 288px;
     grid-template-rows: min-content min-content min-content;
     column-gap: 80px;
     list-style-type: none;
-    margin: 0 auto;
     margin-bottom: 105px;
     padding: 0;
     width: 1050px;
-    height: 455px;
 
     &:hover {
       outline: 1px solid #ececec;
