@@ -94,7 +94,7 @@ export const styles = () => {
 }
 
 // Clean
- const clean = () => {
+  const clean = () => {
   return del ('build');
 };
 
