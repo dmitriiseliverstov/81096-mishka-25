@@ -12,6 +12,7 @@
   margin: 0;
   margin-bottom: 28px;
   padding: 0;
+  height: 100%;
 }
 .card__preview {
   height: 195px;
@@ -34,6 +35,10 @@
   color: #000000;
   margin: 0;
 }
+.card-description__wrapper {
+  padding: 26px 20px 28px 28px;
+  box-shadow: inset 0 0 0 1px #ececec;
+}
 .card__text-price {
   font-size: 15px;
   line-height: 24px;
@@ -43,17 +48,13 @@
   margin: 0;
 }
 .card__title {
-  border: 1px solid #ececec;
-  border-bottom: none;
-  padding: 27px 28px 17px 28px;
+  margin-bottom: 41px;
 }
 .card__title-link {
   text-decoration: none;
 }
 .card__price {
-  border: 1px solid #ececec;
-  border-top: none;
-  padding: 23px 22px 27px 29px;
+  padding-top: 23px;
   position: relative;
 }
 .card__price::after {
@@ -88,8 +89,9 @@
 @media (min-width: @tablet-width) {
   .card {
     grid-template-columns: 334px 335px;
-    grid-template-rows: 260px min-content;
+    grid-template-rows: 334px min-content;
     margin-bottom: 53px;
+    min-height: 334px;
   }
   .card__wrapper {
     width: 768px;
@@ -108,16 +110,19 @@
     font-size: 15px;
     line-height: 30px;
   }
+  .card-description__wrapper {
+    display: grid;
+    grid-template-columns: 308px;
+    grid-template-rows: min-content;
+    padding: 26px 20px 28px 28px;
+    align-items: flex-end;
+  }
   .card__title {
     border-left: none;
     border-bottom: none;
-    padding: 28px 28px 17px 32px;
     }
   .card__price {
-    grid-column: 2/2;
-    border: 1px solid #ececec;
-    border-top: none;
-    padding: 26px 22px 25px 34px;
+    grid-column: 1;
   }
   .card__price--add-cart {
     right: 22px;
@@ -166,11 +171,11 @@
     }
   }
   .card__title {
-    border: 1px solid #ececec;
-    border-bottom: none;
-    padding: 28px 28px 0 28px;
     grid-row: 2;
-    min-height: 94px;
+    margin-bottom: 36px;
+  }
+  .card__title__three {
+    margin-bottom: 12px;
   }
   .card__title-link {
 
@@ -189,8 +194,6 @@
   .card__price {
     grid-column: 1;
     grid-row: 3;
-    padding: 25px 22px 25px 31px;
-    border-top: none;
   }
   .card__price--add-cart {
     right: 20px;
@@ -201,6 +204,9 @@
   }
   .card__description {
     margin: 0;
+  }
+  .card-description__wrapper {
+    grid-template-columns: 282px;
   }
   .card__price::after {
     width: 255px;

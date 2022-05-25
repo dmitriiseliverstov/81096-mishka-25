@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка - интернет-магазин вязаных изделий ручной работы</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header main-header--border">
@@ -16,7 +16,7 @@
             <img src="../img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин">
           </picture>
         </a>
-        <button class="main-nav__toggle" type="button" aria-label="Кнопка выпадающего меню"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__list-one">
             <li class="main-nav__item">
@@ -28,15 +28,11 @@
           </ul>
           <ul class="main-nav__list main-nav__list-two">
             <li class="main-nav__item main-nav__item--search">
-              <svg aria-hidden="true" width="18" height="18" class="main-nav__item-search">
-                <use href="../img/sprite.svg#icon-search"/>
-              </svg>
+              <svg class="main-nav__item-search" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="m17.7 16-3.5-3.4A7.8 7.8 0 0 0 8 0 7.8 7.8 0 0 0 0 7.9c0 4.4 3.5 7.8 7.9 7.8 1.7 0 3.3-.6 4.7-1.5l3.5 3.5c.2.2.4.3.8.3.6 0 1.1-.5 1.1-1.1l-.3-.8ZM2.3 8c0-3 2.5-5.7 5.6-5.7 3 0 5.6 2.6 5.6 5.7 0 3-2.6 5.6-5.6 5.6-3 0-5.7-2.6-5.7-5.6Z"/></svg>
               <a class="main-nav__link main-nav__link-search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--basket">
-              <svg aria-hidden="true" width="21" height="18" class="main-nav__item-backet">
-                <use href="../img/sprite.svg#icon-cart"/>
-              </svg>
+              <svg class="main-nav__item-backet" width="21" height="18" aria-hidden="true" focusable="false" viewBox="0 0 21 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path opacity="0.2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z"/></svg>
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -108,21 +104,21 @@
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="gray" checked>
                     <span class="control-mark"></span>
-                    <span class="control-label">Серый</span>
+                    <span class="control-label">Тиффани</span>
                   </label>
                 </li>
                 <li class="form-order__item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="tiffany">
                     <span class="control-mark"></span>
-                    <span class="control-label">Тиффани</span>
+                    <span class="control-label">Черный</span>
                   </label>
                 </li>
                 <li class="form-order__item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="black">
                     <span class="control-mark"></span>
-                    <span class="control-label">Черный</span>
+                    <span class="control-label">Серый</span>
                   </label>
                 </li>
                 <li class="form-order__item">
@@ -176,16 +172,12 @@
                 </div>
                 <div class="personal-data__container-phone">
                   <input class="field-phone field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="text" name="offer-email" id="offer-email"  required>
-                  <svg aria-hidden="true" width="25" height="24" class="field-phone-svg">
-                    <use href="../img/sprite.svg#icon-phone"/>
-                  </svg>
+                  <svg class="field-phone-svg" width="25" height="24" aria-hidden="true" focusable="false" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g opacity="1"><path d="M17.4 24h-1A18.8 18.8 0 0 1 0 6.7l-.1-1.4c.1-.9.5-1.4 1.1-2 .6-.7 1.6-1.5 2.5-1.6.7 0 1.8.5 2.2 1 .5.6.7 1.6.9 2.4.2 1 .6 2 .5 2.8-.2 1.2-1.9 1.7-2.3 2.6 1.7 3.6 4.2 6.4 7.6 8.2.8-.5 1.6-2 2.8-2 .4 0 1 .3 1.4.4.5 0 1 .3 1.3.5.8.3 2 .6 2.5 1.2.4.6.7 1.5.6 2.1-.3 1.3-2.5 2.7-3.7 3.1ZM12.6 1.5c6 0 10.9 4.7 10.9 10.6H25C25 5.4 19.5 0 12.6 0v1.5Z"/><path d="M12.6 9.2v1.6c.8 0 1.4.6 1.4 1.3h1.6a3 3 0 0 0-3-3ZM12.6 6.1c3.3 0 6.2 2.7 6.2 6h1.6c0-4.1-3.5-7.5-7.7-7.5v1.5h-.1Z"/></g></svg>
                 </div>
                 <p class="personal-data__title personal-data__title--email">E-mail</p>
                 <div class="personal-data__container-email">
                   <input class="field-email field" placeholder="Ваш Email*" type="text" name="offer-email" required>
-                  <svg aria-hidden="true" width="32" height="21" class="field-email-svg">
-                    <use href="../img/sprite.svg#icon-mail"/>
-                  </svg>
+                  <svg class="field-email-svg" width="32" height="21" aria-hidden="true" focusable="false" viewBox="0 0 32 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path opacity="1" d="M28 0H4a4 4 0 0 0-4 4v13a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2l7.8-5.9 4.4 3.3a3 3 0 0 0 3.6 0l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2a2 2 0 0 1-1.2.4c-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24a2 2 0 0 1 2 2l-12.8 9.6Z"/></svg>
                 </div>
               </div>
             </fieldset>
@@ -212,8 +204,8 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo-wrapper">
           <a class="main-footer__logo" href="index.html">
-            <svg aria-label="логотип сайт в подвале" width="102" height="34">
-              <use href="../img/sprite.svg#mishka-logo-tablet" class="main-footer__logo-image"/>
+            <svg aria-label="логотип сайт в подвале" width="102" height="34" class="main-footer__logo-image">
+              <use href="../img/sprite.svg#mishka-logo-tablet"/>
             </svg>
           </a>
         </div>
