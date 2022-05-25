@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка - интернет-магазин вязаных изделий ручной работы</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="../img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../img/favicons/apple-icon.png">
@@ -33,27 +35,29 @@
           <ul class="main-nav__list main-nav__list-two">
             <li class="main-nav__item main-nav__item--search">
               <svg aria-hidden="true" width="18" height="18" class="main-nav__item-search">
-                <use href="../img/sprite.svg#icon-search"/>
+                <use href="../img/sprite2.svg#icon-search"/>
               </svg>
               <a class="main-nav__link main-nav__link-search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--basket">
               <svg aria-hidden="true" width="21" height="18" class="main-nav__item-backet">
-                <use href="../img/sprite.svg#icon-cart"/>
+                <use href="../img/sprite2.svg#icon-cart"/>
               </svg>
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list-three">
-            <li class="main-nav__item main-nav__list--three">
-              <a class="main-nav__link--other" href="#">Новые поступления</a>
+            <li class="main-nav__item main-nav__item--three">
+              <a class="main-nav__item-link" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__item main-nav__list--four">
-              <a class="main-nav__link--other" href="#">Распродажа</a>
+            <li class="main-nav__item main-nav__item--four">
+              <a class="main-nav__item-link" href="#">Распродажа</a>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list-delivery">
-            <a class="main-nav__text" href="#">Бесплатная доставка по России</a>
+            <li>
+              <span class="main-nav__text">Бесплатная доставка по России</span>
+            </li>
           </ul>
         </div>
       </nav>
@@ -74,7 +78,7 @@
               <p class="categories__name-wrapper">
               <span class="categories__name">Предметы<br> интерьера</span>
               <svg aria-hidden="true" width="41" height="62" class="categories__name-svg-interior">
-                <use href="../img/sprite.svg#icon-interior"/>
+                <use href="../img/sprite2.svg#icon-interior"/>
               </svg>
               </p>
             </a>
@@ -86,7 +90,7 @@
               <p class="categories__name-wrapper">
               <span class="categories__name"> Детские<br> игрушки</span>
               <svg aria-hidden="true" width="61" height="61" class="categories__name-svg-toys">
-                <use href="../img/sprite.svg#icon-toy"/>
+                <use href="../img/sprite2.svg#icon-toy"/>
               </svg>
               </p>
             </a>
@@ -147,37 +151,37 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--ecology">
               <svg aria-hidden="true" width="33" height="38" class="advantages-svg advantages-svg--flower">
-                <use href="../img/sprite.svg#icon-advantages-flower"/>
+                <use href="../img/sprite2.svg#icon-advantages-flower"/>
               </svg>
               <p class="advantages__description">Экологически<br> чистые материалы</p>
             </li>
             <li class="advantages__item advantages__item--style">
               <svg aria-hidden="true" width="47" height="27" class="advantages-svg advantages-svg--money">
-                <use href="../img/sprite.svg#icon-advantages-money"/>
+                <use href="../img/sprite2.svg#icon-advantages-money"/>
               </svg>
               <p class="advantages__description">Скандинавский стиль<br> по российской цене</p>
             </li>
             <li class="advantages__item advantages__item--likes">
               <svg aria-hidden="true" width="34" height="27" class="advantages-svg advantages-svg--heart">
-                <use href="../img/sprite.svg#icon-advantages-heart"/>
+                <use href="../img/sprite2.svg#icon-advantages-heart"/>
               </svg>
               <p class="advantages__description">Увеличивает лайки<br> на фотографиях</p>
             </li>
             <li class="advantages__item advantages__item--hands">
               <svg aria-hidden="true" width="35" height="34" class="advantages-svg advantages-svg--clew">
-                <use href="../img/sprite.svg#icon-advantages-clew"/>
+                <use href="../img/sprite2.svg#icon-advantages-clew"/>
               </svg>
               <p class="advantages__description">Связано вручную с любовью и умилением</p>
             </li>
             <li class="advantages__item advantages__item--support">
               <svg aria-hidden="true" width="55" height="23" class="advantages-svg advantages-svg--rocket">
-                <use href="../img/sprite.svg#icon-advantages-rocket"/>
+                <use href="../img/sprite2.svg#icon-advantages-rocket"/>
               </svg>
               <p class="advantages__description">Поддержка отечественного производителя</p>
             </li>
             <li class="advantages__item advantages__item--gift">
               <svg aria-hidden="true" width="33" height="32" class="advantages-svg advantages-svg--present">
-                <use href="../img/sprite.svg#icon-advantages-present"/>
+                <use href="../img/sprite2.svg#icon-advantages-present"/>
               </svg>
               <p class="advantages__description">Поставляется в подарочной упаковке</p>
             </li>
@@ -188,7 +192,7 @@
         <div class="reviews__wrapper-img">
           <div class="reviews__wrapper">
             <h2 class="reviews__title">Отзывы</h2>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item">
               <div class="reviews__author-info">
                 <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
                   у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -202,11 +206,11 @@
             <div class="reviews__container">
               <div class="reviews__container-wrapper">
                 <svg aria-label="Предыдущий отзыв" width="50" height="26" class="reviews__container-arrow">
-                  <use href="../img/sprite.svg#huge-arrow"/>
+                  <use href="../img/sprite2.svg#icon-arrow"/>
                 </svg>
                 <button class="visually-hidden" type="button">Предыдущий отзыв</button>
                 <svg aria-label="Следующий отзыв" width="50" height="26" class="reviews__container-arrow-right">
-                  <use href="../img/sprite.svg#huge-arrow"/>
+                  <use href="../img/sprite2.svg#icon-arrow"/>
                 </svg>
                 <button class="visually-hidden" type="button">Следующий отзыв</button>
               </div>
@@ -226,7 +230,7 @@
               email:
             </li>
             <li class="contacts__details">
-              <a class="contacts-email contacts__details--border" href="mailto:mail@htmlacademy.ru">info@mimimishkashop.ru</a>
+              <a class="contacts-email contacts-email--border" href="mailto:mail@htmlacademy.ru">info@mimimishkashop.ru</a>
             </li>
             <li class="contacts__address">
               адрес:
@@ -241,79 +245,79 @@
         </div>
         <a href="#" class="contacts-button button">Напишите нам</a>
       </div>
-      <footer class="main-footer">
-        <div class="main-footer__wrapper">
-          <div class="main-footer__logo-wrapper">
-            <a class="main-footer__logo" href="index.html">
-              <svg aria-label="логотип сайт в подвале" width="102" height="34" class="main-footer__logo-image">
-                <use href="../img/sprite.svg#mishka-logo-tablet"/>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo-wrapper">
+          <a class="main-footer__logo" href="index.html">
+            <svg aria-label="логотип сайт в подвале" width="102" height="34" class="main-footer__logo-image">
+              <use href="../img/sprite2.svg#icon-logo-footer"/>
+            </svg>
+          </a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg aria-label="сайт vkontakte" width="28" height="23">
+                  <use href="../img/sprite2.svg#icon-vkontakte"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg aria-label="сайт youtube" width="28" height="23">
+                  <use href="../img/sprite2.svg#icon-youtube"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg aria-label="приложение telegram" width="28" height="23">
+                  <use href="../img/sprite2.svg#icon-telegram"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <div class="copyright-wrapper">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg aria-label="сайт htmlacademy" width="27" height="35" class="copyright__logo">
+                <use href="../img/sprite2.svg#icon-htmlacademy"/>
               </svg>
             </a>
           </div>
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                  <svg aria-label="сайт vkontakte" width="28" height="23">
-                    <use href="../img/sprite.svg#icon-vkontakte"/>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <svg aria-label="сайт youtube" width="28" height="23">
-                    <use href="../img/sprite.svg#icon-youtube"/>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                  <svg aria-label="приложение telegram" width="28" height="23">
-                    <use href="../img/sprite.svg#icon-telegram"/>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-footer__copyright copyright">
-            <div class="copyright-wrapper">
-              <span class="copyright__text">Разработано</span>
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg aria-label="сайт htmlacademy" width="27" height="35" class="copyright__logo">
-                  <use href="../img/sprite.svg#icon-htmlacademy"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        </footer>
-      <div class="modal-order modal-order-open" style="display: none;" >
-        <div class="modal-order__wrapper">
-          <div class="modal-order__inner">
-            <div class="modal-order__content">
-              <h2 class="modal-order__title">Добавить в корзину</h2>
-              <p class="modal-order__text">Выберите размер:</p>
-            </div>
-            <form action="https://echo.htmlacademy.ru" method="post" class="modal-order__form">
-              <div class="modal-order-size">
-                <div class="modal-order-size__button modal-order-size__button--active" type="checkbox" name="smoll" checked>
-                  <input type="checkbox" name="smoll" class="visually-hidden checkbox__control" id="smoll-order" checked>
-                  <label for="small-order" class="checkbox__label--size">S</label>
-                </div>
-                <div class="modal-order-size__button" type="checkbox" name="medium">
-                  <input type="checkbox" name="madium" class="visually-hidden checkbox__control" id="medium-order">
-                  <label for="medium-order" class="checkbox__label--size">M</label>
-                </div>
-                <div class="modal-order-size__button" type="checkbox" name="large">
-                  <input type="checkbox" name="large" class="visually-hidden checkbox__control" id="large-order">
-                  <label for="large-order" class="checkbox__label--size">L</label>
-                </div>
-                <button class="modal-order-size__add" type="submit">Добавить</button>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
+    </footer>
+    <div class="modal-order modal-order-open" style="display: none;" >
+      <div class="modal-order__wrapper">
+        <div class="modal-order__inner">
+          <div class="modal-order__content">
+            <h2 class="modal-order__title">Добавить в корзину</h2>
+            <p class="modal-order__text">Выберите размер:</p>
+          </div>
+          <form action="https://echo.htmlacademy.ru" method="post" class="modal-order__form">
+            <div class="modal-order-size">
+              <div class="modal-order-size__button modal-order-size__button--active">
+                <input type="checkbox" name="smoll" class="visually-hidden modal-order-size__control" checked>
+                <label class="modal-order-size__label">S</label>
+              </div>
+              <div class="modal-order-size__button">
+                <input type="checkbox" name="madium" class="visually-hidden modal-order-size__control" id="medium-order">
+                <label for="medium-order" class="modal-order-size__label">M</label>
+              </div>
+              <div class="modal-order-size__button">
+                <input type="checkbox" name="large" class="visually-hidden modal-order-size__control" id="large-order">
+                <label for="large-order" class="modal-order-size__label">L</label>
+              </div>
+              <button class="modal-order-size__add" type="submit">Добавить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

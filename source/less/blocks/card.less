@@ -4,7 +4,7 @@
   padding: 0 30px;
   box-sizing: border-box;
 }
-.card {
+.card__inner {
   display: grid;
   grid-template-columns: 260px;
   grid-template-rows: min-content min-content min-content;
@@ -35,8 +35,8 @@
   color: #000000;
   margin: 0;
 }
-.card-description__wrapper {
-  padding: 26px 20px 28px 28px;
+.card__wrapper-title {
+  padding: 26px 20px 28px 29px;
   box-shadow: inset 0 0 0 1px #ececec;
 }
 .card__text-price {
@@ -48,7 +48,7 @@
   margin: 0;
 }
 .card__title {
-  margin-bottom: 41px;
+  margin-bottom: 20px;
 }
 .card__title-link {
   text-decoration: none;
@@ -65,10 +65,10 @@
   content: "";
   top: 0;
 }
-.card__price--add-cart {
+.card__price-add-cart {
   position: absolute;
   top: 12px;
-  right: 17px;
+  right: 0;
   padding: 10px;
   opacity: 0.2;
   fill: #000000;
@@ -87,10 +87,10 @@
   }
 }
 @media (min-width: @tablet-width) {
-  .card {
+  .card__inner {
     grid-template-columns: 334px 335px;
     grid-template-rows: 334px min-content;
-    margin-bottom: 53px;
+    margin-bottom: 54px;
     min-height: 334px;
   }
   .card__wrapper {
@@ -110,11 +110,11 @@
     font-size: 15px;
     line-height: 30px;
   }
-  .card-description__wrapper {
+  .card__wrapper-title {
     display: grid;
     grid-template-columns: 308px;
     grid-template-rows: min-content;
-    padding: 26px 20px 28px 28px;
+    padding: 30px 20px 23px 35px;
     align-items: flex-end;
   }
   .card__title {
@@ -124,7 +124,7 @@
   .card__price {
     grid-column: 1;
   }
-  .card__price--add-cart {
+  .card__price-add-cart {
     right: 22px;
 
     &:hover {
@@ -156,7 +156,7 @@
     column-gap: 51px;
     margin-bottom: 57px;
   }
-  .card {
+  .card__inner {
     grid-template-columns: 316px;
     grid-template-rows: min-content min-content min-content;
     margin-bottom: 0;
@@ -195,7 +195,7 @@
     grid-column: 1;
     grid-row: 3;
   }
-  .card__price--add-cart {
+  .card__price-add-cart {
     right: 20px;
     top: 15px;
   }
@@ -205,8 +205,9 @@
   .card__description {
     margin: 0;
   }
-  .card-description__wrapper {
+  .card__wrapper-title {
     grid-template-columns: 282px;
+    padding: 27px 20px 26px 30px;
   }
   .card__price::after {
     width: 255px;
