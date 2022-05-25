@@ -116,7 +116,7 @@
   position: relative;
 }
 .personal-data__container-description {
-  padding-top: 22px;
+  padding-top: 19px;
   height: 142px;
 }
 .personal-data__form::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -155,23 +155,23 @@
   .personal-data__wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 50px 0 10px 50px;
     width: 768px;
     margin: 0 auto;
     padding-left: 50px;
   }
   .personal-data__first-wrapper {
-    margin-top: 2px;
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 39px;
+    margin-bottom: 20px;
   }
   .personal-data__first {
     font-size: 19px;
     padding-top: 0;
     width: 49px;
-    margin-right: 25px;
+    margin-right: 5px;
     align-self: center;
   }
   .personal-data__second-wrapper {
@@ -179,7 +179,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 39px;
+    margin-bottom: 27px;
   }
   .personal-data__middle-wrapper {
     display: flex;
@@ -191,6 +191,7 @@
     background: #f1f1f1;
     margin: 0 auto;
     border: none;
+    padding-bottom: 41px;
   }
   .personal-data__line::before {
     display: none;
@@ -203,6 +204,7 @@
     margin-top: 17px;
   }
   .personal-data__container {
+    min-width: 500px;
     margin-left:97px;
   }
   .personal-data__container-phone {
@@ -246,7 +248,7 @@
     display: flex;
     flex-direction: row-reverse;
     height: 52px;
-    margin-bottom: 0;
+    margin-bottom: 38px;
   }
   .personal-data__note {
     font-size: 17px;
@@ -322,6 +324,7 @@
   }
   .personal-data__container-note {
     margin-left: 128px;
+    margin-bottom: 0;
   }
   .personal-data__note {
     margin-left: 140px;
@@ -355,5 +358,18 @@
   .personal-data__title {
     width: 70px;
     text-align: center;
+  }
+  .personal-data__first {
+    padding-top: 14px;
+    align-self: flex-start;
+  }
+  .personal-data__middle-wrapper {
+    margin-bottom: 0;
+  }
+  .personal-data__second-wrapper {
+    margin-bottom: 25px;
+  }
+  .personal-data__container-description {
+    margin-bottom: 49px;
   }
 }

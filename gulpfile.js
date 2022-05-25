@@ -65,19 +65,19 @@ export const styles = () => {
 
  // SVG
   const svg = () =>
-    gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+    gulp.src(['source/img/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-
   const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
+  return gulp.src('source/img/icon-*.svg')
   .pipe(svgo())
   .pipe(svgstore({
     inlineSvg: true
   }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'));
+
+  .pipe(rename('sprite2.svg'))
+  .pipe(gulp.dest('build/img/'));
 }
 
 // Copy
@@ -144,5 +144,5 @@ export const build = gulp.series(
 
 
 export default gulp.series(
-  html, styles, server, watcher
+  build, server, watcher
 );
