@@ -132,6 +132,12 @@
   .main-nav--nojs .main-nav__item {
     display: block;
   }
+  .main-nav--nojs .main-nav__item--three {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__item--four {
+    display: none;
+  }
 }
 @media (min-width: @tablet-width) {
   .main-nav {
@@ -383,6 +389,11 @@
       color: #63d1bb;
     }
   }
+  .main-nav__link:focus .main-nav__item-search {
+    opacity: 1;
+    fill: #63d1bb;
+    color: #63d1bb;
+    }
   .main-nav__item-backet {
     top: -13px;
     left: 13px;

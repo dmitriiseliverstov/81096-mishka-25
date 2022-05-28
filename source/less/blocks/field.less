@@ -13,15 +13,24 @@
 .field:hover {
   box-shadow: inset 0px -2px 0px #62d1ba;
 }
-.field:active {
+.field:focus {
   box-shadow: inset 0px -2px 0px #62d1ba;
 }
+.field:hover + .field-phone-svg,
+.field:focus + .field-phone-svg {
+  fill: #62d1ba;
+  opacity: 1;
+}
+.field:hover + .field-email-svg,
+.field:focus + .field-email-svg {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
 .field:focus-visible {
   outline: none;
 }
-.field-phone-svg:hover {
-  fill: #62d1ba;
-}
+
 .field-phone-svg {
   position: absolute;
   top: 11px;
@@ -68,11 +77,11 @@
   }
   .field-second {
     width: 100%;
-    margin-left: 20px;
+    margin-left: 27px;
   }
   .filed-middle {
     width: 375px;
-    margin-left: 20px;
+    margin-left: 27px;
   }
   .field-phone {
     width: 501px;

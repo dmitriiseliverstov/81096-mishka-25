@@ -73,9 +73,12 @@
           <div class="card__preview">
             <a href="#">
               <picture>
+                <source media="(min-width: 1150px)" type="image/webp" srcset="../img/bunny-jumper-desktop.webp 1x, ../img/bunny-jumper-desktop@2x.webp 2x" width="316" height="462">
                 <source media="(min-width: 1150px)" srcset="../img/bunny-jumper-desktop.jpg 1x, ../img/bunny-jumper-desktop@2x.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" type="image/webp" srcset="../img/bunny-jumper-tablet.webp 1x, ../img/bunny-jumper-tablet@2x.webp 2x" width="334" height="334">
                 <source media="(min-width: 768px)" srcset="../img/bunny-jumper-tablet.jpg 1x, ../img/bunny-jumper-tablet@2x.jpg 2x" width="334" height="334">
-                <img class="card__image" src="../img/bunny-jumper.jpg" srcset="../img/bunny-jumper@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
+                <source type="image/webp" srcset="../img/bunny-jumper.webp 1x, ../img/bunny-jumper@2x.webp 2x" width="260" height="195">
+                <img class="card__image" src="../img/bunny-jumper.jpg" srcset="../img/bunny-jumper@2x.jpg 2x" alt="Зайчик-попрыгайчик">
               </picture>
             </a>
           </div>
@@ -88,7 +91,7 @@
             </div>
             <div class="card__price">
               <p class="card__text-price">1200 руб.</p>
-              <a href="#">
+              <a class="card__link" aria-label="Добавить в корзину" href="#">
                 <svg aria-hidden="true" width="21" height="18" class="card__price-add-cart">
                   <use href="../img/sprite2.svg#icon-cart"/>
                 </svg>
@@ -100,9 +103,12 @@
           <div class="card__preview">
             <a href="#">
               <picture>
+                <source media="(min-width: 1150px)" type="image/webp" srcset="../img/laundry-basket-desktop.webp 1x, ../img/laundry-basket-desktop@2x.webp 2x" width="316" height="462">
                 <source media="(min-width: 1150px)" srcset="../img/laundry-basket-desktop.jpg 1x, ../img/laundry-basket-desktop@2x.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" type="image/webp" srcset="../img/laundry-basket-tablet.webp 1x, ../img/laundry-basket-tablet@2x.webp 2x" width="334" height="334">
                 <source media="(min-width: 768px)" srcset="../img/laundry-basket-tablet.jpg 1x, ../img/laundry-basket-tablet@2x.jpg 2x" width="334" height="334">
-                <img class="card__image" src="../img/bunny-jumper.jpg" srcset="../img/laundry-basket@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+                <source type="image/webp" srcset="../img/laundry-basket.webp 1x, ../img/laundry-basket@2x.webp 2x" width="260" height="195">
+                <img class="card__image" src="../img/laundry-basket.jpg" srcset="../img/laundry-basket@2x.jpg 2x" alt="Корзинка для белья">
               </picture>
             </a>
           </div>
@@ -115,7 +121,7 @@
             </div>
             <div class="card__price">
               <p class="card__text-price">690 руб.</p>
-              <a href="#">
+              <a class="card__link" aria-label="Добавить в корзину" href="#">
                 <svg aria-hidden="true" width="21" height="18" class="card__price-add-cart">
                   <use href="../img/sprite2.svg#icon-cart"/>
                 </svg>
@@ -127,9 +133,12 @@
           <div class="card__preview">
             <a href="#">
               <picture>
+                <source media="(min-width: 1150px)" type="image/webp" srcset="../img/basket-for-toys-desktop.webp 1x, ../img/basket-for-toys-desktop@2x.webp 2x" width="316" height="462">
                 <source media="(min-width: 1150px)" srcset="../img/basket-for-toys-desktop.jpg 1x, ../img/basket-for-toys-desktop@2x.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" type="image/webp" srcset="../img/basket-for-toys-tablet.webp 1x, ../img/basket-for-toys-tablet@2x.webp 2x" width="334" height="334">
                 <source media="(min-width: 768px)" srcset="../img/basket-for-toys-tablet.jpg 1x, ../img/basket-for-toys-tablet@2x.jpg 2x" width="334" height="334">
-                <img class="card__image" src="../img/basket-for-toys.jpg" srcset="../img/basket-for-toys@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для белья">
+                <source type="image/webp" srcset="../img/basket-for-toys.webp 1x, ../img/basket-for-toys.webp 2x" width="260" height="195">
+                <img class="card__image" src="../img/basket-for-toys.jpg" srcset="../img/basket-for-toys@2x.jpg 2x" alt="Большая корзинка для белья">
               </picture>
             </a>
           </div>
@@ -142,7 +151,7 @@
             </div>
             <div class="card__price">
               <p class="card__text-price">1500 руб.</p>
-              <a href="#">
+              <a class="card__link" aria-label="Добавить в корзину" href="#">
                 <svg aria-hidden="true" width="21" height="18" class="card__price-add-cart">
                   <use href="../img/sprite2.svg#icon-cart"/>
                 </svg>
@@ -152,17 +161,21 @@
         </li>
       </ul>
       <section class="video">
+        <h2 class="visually-hidden">Процесс производства товаров</h2>
         <div class="video-wrapper">
           <div class="video__title">
             <p class="video__text">Процесс производства</p>
           </div>
           <div class="video__preview">
             <picture>
-              <source media="(min-width: 1150px)" srcset="../img/video-promo-desktop.webp 1x, ../img/video-promo-desktop@2x.webp 2x" width="682" height="455">
-              <source media="(min-width: 768px)" srcset="../img/video-promo-tablet.webp 1x, ../img/video-promo-tablet@2x.webp 2x" width="668" height="455">
-              <img class="video__image" src="../img/video-promo.webp" srcset="../img/video-promo@2x.webp 2x" width="260" height="150" alt="Процесс производства">
+              <source media="(min-width: 1150px)" type="image/webp" srcset="../img/video-promo-desktop.webp 1x, ../img/video-promo-desktop@2x.webp 2x" width="682" height="455">
+              <source media="(min-width: 1150px)" srcset="../img/video-promo-desktop.jpg 1x, ../img/video-promo-desktop@2x.jpg 2x" width="682" height="455">
+              <source media="(min-width: 768px)" srcset="../img/video-promo-tablet.jpg 1x, ../img/video-promo-tablet@2x.jpg 2x" width="668" height="455">
+              <source media="(min-width: 768px)" type="image/webp" srcset="../img/video-promo-tablet.webp 1x, ../img/video-promo-tablet@2x.webp 2x" width="668" height="455">
+              <source type="image/webp" srcset="../img/video-promo.webp 1x, ../img/video-promo@2x.webp 2x" width="260" height="150">
+              <img class="video__image" src="../img/video-promo.jpg" srcset="../img/video-promo@2x.jpg 2x" alt="Процесс производства">
             </picture>
-            <a href="#" class="video-promo-botton">
+            <a href="#" class="video-promo-botton" aria-label="Смотреть видео">
               <svg aria-hidden="true" width="101" height="77">
                 <use href="../img/sprite2.svg#icon-play"/>
               </svg>
@@ -187,22 +200,22 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg aria-label="сайт vkontakte" width="28" height="23">
+              <a class="social__link social__link--vkontakte" aria-label="Мишка в vkontakte" href="https://vk.com/htmlacademy">
+                <svg width="28" height="23">
                   <use href="../img/sprite2.svg#icon-vkontakte"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg aria-label="сайт youtube" width="28" height="23">
+              <a class="social__link social__link--youtube" aria-label="Мишка в youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="28" height="23">
                   <use href="../img/sprite2.svg#icon-youtube"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg aria-label="приложение telegram" width="28" height="23">
+              <a class="social__link social__link--telegram" aria-label="Мишка в telegram" href="https://t.me/htmlacademy">
+                <svg width="28" height="23">
                   <use href="../img/sprite2.svg#icon-telegram"/>
                 </svg>
               </a>
@@ -212,8 +225,8 @@
         <div class="main-footer__copyright copyright">
           <div class="copyright-wrapper">
             <span class="copyright__text">Разработано</span>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg aria-label="сайт htmlacademy" width="27" height="35" class="copyright__logo">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти в HTML Academy">
+              <svg width="27" height="35" class="copyright__logo">
                 <use href="../img/sprite2.svg#icon-htmlacademy"/>
               </svg>
             </a>
