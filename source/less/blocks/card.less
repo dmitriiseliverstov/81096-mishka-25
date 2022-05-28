@@ -126,10 +126,6 @@
   }
   .card__price-add-cart {
     right: 22px;
-
-    &:hover {
-      fill: #63d1bb;
-    }
   }
   .card__price::after {
     box-shadow: inset 0 1px 0 0 #e5e5e5, inset 0 -1px 0 0 #e5e5e5;
@@ -198,6 +194,15 @@
   .card__price-add-cart {
     right: 20px;
     top: 15px;
+
+    &:hover {
+      fill: #63d1bb;
+    }
+  }
+  .card__link:focus .card__price-add-cart {
+    fill: #63d1bb;
+    color: #63d1bb;
+    opacity: 1;
   }
   .card__text {
     margin-bottom: 6px;

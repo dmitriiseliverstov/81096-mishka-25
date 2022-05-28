@@ -19,7 +19,7 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="../img/mishka-logo-desktop.svg" width="149" height="72">
             <source media="(min-width: 768px)" srcset="../img/mishka-logo-tablet.svg" width="113" height="46">
-            <img src="../img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин">
+            <img src="../img/mishka-logo-mobile.svg" alt="Мишка - интернет-магазин">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Кнопка выпадающего меню"><span class="visually-hidden">Открыть меню</span></button>
@@ -72,9 +72,10 @@
         </div>
       </section>
       <section class="categories">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="categories__list categories__list--interior">
           <li class="categories__item categories__item--interior">
-            <a href="#" class="categories__link">
+            <a href="#" class="categories__link" aria-label="Перейти в каталог">
               <p class="categories__name-wrapper">
               <span class="categories__name">Предметы<br> интерьера</span>
               <svg aria-hidden="true" width="41" height="62" class="categories__name-svg-interior">
@@ -86,7 +87,7 @@
         </ul>
         <ul class="categories__list categories__list--toys">
           <li class="categories__item categories__item--toys">
-            <a href="#" class="categories__link">
+            <a href="#" class="categories__link" aria-label="Перейти в каталог">
               <p class="categories__name-wrapper">
               <span class="categories__name"> Детские<br> игрушки</span>
               <svg aria-hidden="true" width="61" height="61" class="categories__name-svg-toys">
@@ -132,9 +133,12 @@
               </div>
               <div class="top-item__product">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="../img/top-item-product-desktop.webp 1x, ../img/top-item-product-desktop@2x.webp 2x" width="525" height="636">
-                  <source media="(min-width: 768px)" srcset="../img/top-item-product-tablet.webp 1x, ../img/top-item-product-tablet@2x.webp 2x" width="334" height="404">
-                  <img src="../img/top-item-product.webp" srcset="../img/top-item-product@2x.webp 2x" width="260" height="315" alt="Товар недели">
+                  <source media="(min-width: 1150px)" srcset="../img/top-item-product-desktop.jpg 1x, ../img/top-item-product-desktop@2x.jpg 2x" width="525" height="636">
+                  <source media="(min-width: 1150px)" type="image/webp" srcset="../img/top-item-product-desktop.webp 1x, ../img/top-item-product-desktop@2x.webp 2x" width="525" height="636">
+                  <source media="(min-width: 768px)" srcset="../img/top-item-product-tablet.jpg 1x, ../img/top-item-product-tablet@2x.jpg 2x" width="334" height="404">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="../img/top-item-product-tablet.webp 1x, ../img/top-item-product-tablet@2x.webp 2x" width="334" height="404">
+                  <source type="image/webp" srcset="../img/top-item-product.webp 1x, ../img/top-item-product@2x.webp 2x" width="260" height="315">
+                  <img src="../img/top-item-product.jpg" srcset="../img/top-item-product@2x.webp 2x" alt="Товар недели">
                 </picture>
               </div>
               <div class="top-item__price-wrapper">
@@ -205,13 +209,18 @@
             </blockquote>
             <div class="reviews__container">
               <div class="reviews__container-wrapper">
-                <svg aria-label="Предыдущий отзыв" width="50" height="26" class="reviews__container-arrow">
+                <button class="reviews__button" type="button">
+                  <span class="visually-hidden">Предыдущий отзыв</span>
+                  <svg aria-label="Предыдущий отзыв" width="50" height="26" class="reviews__container-arrow">
                   <use href="../img/sprite2.svg#icon-arrow"/>
                 </svg>
-                <button class="visually-hidden" type="button">Предыдущий отзыв</button>
-                <svg aria-label="Следующий отзыв" width="50" height="26" class="reviews__container-arrow-right">
-                  <use href="../img/sprite2.svg#icon-arrow"/>
-                </svg>
+                </button>
+                <button class="reviews__button" type="button">
+                  <span class="visually-hidden">Следующий отзыв</span>
+                  <svg aria-label="Следующий отзыв" width="50" height="26" class="reviews__container-arrow-right">
+                    <use href="../img/sprite2.svg#icon-arrow"/>
+                  </svg>
+                </button>
                 <button class="visually-hidden" type="button">Следующий отзыв</button>
               </div>
             </div>
@@ -241,9 +250,19 @@
           </ul>
         </div>
         <div class="contacts-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3115807941994!2d30.32305011114413!3d59.93839501597351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2spt!4v1648989122182!5m2!1sen!2spt" width="100%" height="457" style="border:0;" allowfullscreen="" title="Офис интернет-магазина по адресу г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contacts-map__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <img src="img/map-tablet@1x.jpg" alt="Карта" srcset="img/map-tablet@2x.jpg 2x">
+            </picture>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3115807941994!2d30.32305011114413!3d59.93839501597351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2spt!4v1648989122182!5m2!1sen!2spt" style="border:0; width:100%; height:457px" allowfullscreen="" title="Офис интернет-магазина по адресу г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <a href="#" class="contacts-button button">Напишите нам</a>
+        <a href="#" aria-label="Перейти на страницу обратной связи" class="contacts-button button">Напишите нам</a>
       </div>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -257,22 +276,22 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg aria-label="сайт vkontakte" width="28" height="23">
+              <a class="social__link social__link--vkontakte" aria-label="Мишка в vkontakte" href="https://vk.com/htmlacademy">
+                <svg width="28" height="23">
                   <use href="../img/sprite2.svg#icon-vkontakte"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg aria-label="сайт youtube" width="28" height="23">
+              <a class="social__link social__link--youtube" aria-label="Мишка в youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="28" height="23">
                   <use href="../img/sprite2.svg#icon-youtube"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg aria-label="приложение telegram" width="28" height="23">
+              <a class="social__link social__link--telegram" aria-label="Мишка в telegram" href="https://t.me/htmlacademy">
+                <svg width="28" height="23">
                   <use href="../img/sprite2.svg#icon-telegram"/>
                 </svg>
               </a>
@@ -282,8 +301,8 @@
         <div class="main-footer__copyright copyright">
           <div class="copyright-wrapper">
             <span class="copyright__text">Разработано</span>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg aria-label="сайт htmlacademy" width="27" height="35" class="copyright__logo">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти в HTML Academy">
+              <svg width="27" height="35" class="copyright__logo">
                 <use href="../img/sprite2.svg#icon-htmlacademy"/>
               </svg>
             </a>
