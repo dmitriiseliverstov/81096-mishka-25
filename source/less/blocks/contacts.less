@@ -1,6 +1,7 @@
 .contacts {
   padding-top: 89px;
 }
+
 .contacts-wrapper {
   display: grid;
   grid-template-rows: min-content min-content min-content min-content min-content;
@@ -11,6 +12,7 @@
   margin-bottom: 30px;
   box-sizing: border-box;
 }
+
 .contacts__title {
   font-size: 25px;
   line-height: 30px;
@@ -20,6 +22,7 @@
   margin: 0;
   margin-bottom: 27px;
 }
+
 .contacts-email {
   font-size: 14px;
   line-height: 30px;
@@ -28,19 +31,23 @@
   color: #444444;
   text-decoration: none;
 }
+
 .contacts-email:hover {
   color: #46c1ae;
 }
+
 .contacts-email:active {
   color: #46c1ae;
 }
 
 .contacts-map__image-wrapper {
-  display: none;
+  position: absolute;
+  z-index: -2;
 }
+
 .contacts__block {
   display: grid;
-  grid-template-columns: 76px  193px;
+  grid-template-columns: 76px  183px;
   grid-template-rows: min-content min-content min-content;
   grid-gap: 30px 0;
   list-style-type: none;
@@ -51,16 +58,19 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .contacts-email--border {
   border-bottom: 1px solid #62d1ba;
   width: 180px;
   min-height: 30px;
 }
+
 @media (min-width: @tablet-width) {
   .contacts {
-  box-sizing: border-box;
-  padding-top: 80px;
-}
+    box-sizing: border-box;
+    padding-top: 80px;
+  }
+
   .contacts-wrapper {
     margin: 0 auto;
     width: 768px;
@@ -68,6 +78,7 @@
     box-sizing: border-box;
     position: relative;
   }
+
   .contacts-wrapper::before {
     content: "";
     position: absolute;
@@ -75,18 +86,20 @@
     right: 53px;
     width: 47px;
     height: 81px;
-    background-image: url(../img/flag.svg);
+    background-image: url("../img/flag.svg");
     background-repeat: no-repeat;
   }
+
   .contacts__block {
-  display: grid;
-  grid-template-columns: 77px  256px 77px 234px;
-  grid-template-rows: min-content;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 77px  256px 77px 234px;
+    grid-template-rows: min-content;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
   }
+
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
@@ -96,6 +109,7 @@
     margin-top: 0;
     margin-bottom: 49px;
   }
+
   .contacts__details {
     font-size: 17px;
     line-height: 30px;
@@ -103,16 +117,19 @@
     font-style: normal;
     color: #444444;
   }
+
   .contacts-email--border {
     border-bottom: 1px solid #62d1ba;
     width: 204px;
     height: 30px;
   }
+
   .contacts-email {
     font-size: 17px;
     line-height: 30px;
     font-weight: 400;
   }
+
   .contacts__address {
     font-size: 17px;
     line-height: 30px;
@@ -120,15 +137,18 @@
     font-style: normal;
     color: #444444;
   }
+
   .contacts-svg {
     position: absolute;
     right: 0;
     top: -14px;
   }
+
   .contacts-button {
     width: 230px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .contacts {
     display: flex;
@@ -139,6 +159,7 @@
     margin-bottom: 105px;
     position: relative;
   }
+
   .contacts-wrapper {
     padding: 0;
     margin: 0;
@@ -147,11 +168,13 @@
     width: 348px;
     column-gap: 58px;
   }
+
   .contacts-wrapper::before {
     content: "";
     top: 63px;
     left: -113px;
   }
+
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
@@ -161,6 +184,7 @@
     margin-top: 81px;
     margin-bottom: 34px;
   }
+
   .contacts__block {
     display: grid;
     grid-template-columns: 70px  235px;
@@ -169,6 +193,7 @@
     list-style-type: none;
     grid-row: 2;
   }
+
   .contacts__address {
     font-size: 17px;
     line-height: 30px;
@@ -176,6 +201,7 @@
     font-style: normal;
     color: #444444;
   }
+
   .contacts__details {
     font-size: 17px;
     line-height: 30px;
@@ -183,19 +209,22 @@
     font-style: normal;
     color: #444444;
   }
+
   .contacts-svg {
     position: absolute;
     left: -104px;
     top: 20px;
   }
+
   .contacts-email--border {
     width: 204px;
-    border-bottom: 1px solid #62D1BA;
+    border-bottom: 1px solid #62d1ba;
 
     &:active {
-      border-bottom: 1px solid hsla(171, 50%, 52%, .1);
+      border-bottom: 1px solid hsla(171, 50%, 52%, 0.1);
     }
   }
+
   .contacts-button {
     margin-bottom: 0;
   }

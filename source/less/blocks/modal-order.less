@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
 }
+
 .modal-order__wrapper {
   position: fixed;
   top: 55%;
@@ -16,13 +17,15 @@
   margin: 0 auto;
   background-color: #ffffff;
   border: 1px solid #c6c6c6;
-  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
-  transform: translate(-50%,-50%);
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  transform: translate(-50%, -50%);
   left: 50%;
 }
+
 .modal-order__inner {
   padding: 28px 40px 46px 30px;
 }
+
 .modal-order__title {
   font-size: 25px;
   line-height: 30px;
@@ -35,6 +38,7 @@
   margin-bottom: 14px;
   text-align: center;
 }
+
 .modal-order__text {
   font-size: 15px;
   line-height: 30px;
@@ -45,6 +49,7 @@
   margin: 0;
   margin-bottom: 22px;
 }
+
 .modal-order-size__button {
   font-size: 17px;
   line-height: 16px;
@@ -57,12 +62,14 @@
   cursor: pointer;
   box-sizing: border-box;
 }
+
 .modal-order-size__button:nth-child(3) {
   margin-right: 0;
 }
+
 .modal-order-size__add {
   width: 260px;
-  background: #63D1BB;
+  background: #63d1bb;
   border: none;
   margin-top: 31px;
   font-size: 17px;
@@ -71,21 +78,24 @@
   font-style: normal;
   color: #ffffff;
   padding: 18px 0;
-  text-transform:uppercase;
+  text-transform: uppercase;
 
   &:hover {
-    background-color: #56C3B2;
+    background-color: #56c3b2;
     border: none;
   }
+
   &:active {
-    color: hsla(0,0%,100%,.3);
+    color: hsla(0, 0%, 100%, 0.3);
   }
 }
+
 .modal-order-size {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .modal-order-size__label {
   display: block;
   width: 100%;
@@ -94,27 +104,34 @@
   cursor: pointer;
   box-shadow: inset 0 0 0 2px rgb(68 68 68 / 10%);
 }
-.modal-order-size__control:checked+ .modal-order-size__label {
+
+.modal-order-size__control:checked + .modal-order-size__label {
   box-shadow: inset 0 0 0 2px #63d1bb;
 }
-.modal-order-size__control:hover+ .modal-order-size__label {
+
+.modal-order-size__control:hover + .modal-order-size__label {
   box-shadow: inset 0 0 0 2px rgb(68 68 68 / 30%);
 }
+
 @media (min-width: @tablet-width) {
   .modal-order {
     box-shadow: 0 0 0 1px #e5e5e5;
   }
+
   .modal-order__wrapper {
     width: 566px;
   }
+
   .modal-order__title {
     font-size: 30px;
     line-height: 57px;
     font-weight: 700;
   }
+
   .modal-order-size__button {
     width: 112px;
   }
+
   .modal-order-size__add {
     width: 350px;
   }

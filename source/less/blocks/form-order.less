@@ -2,14 +2,17 @@
   display: flex;
   flex-direction: column;
 }
+
 .form-order__wrapper {
   width: 320px;
   margin: 0 auto;
   padding-left: 30px;
 }
+
 .form-order__line {
   position: relative;
 }
+
 .form-order__line::before {
   content: "";
   position: absolute;
@@ -19,68 +22,82 @@
   width: 200px;
   background-color: #62d1ba;
 }
+
 .form-order__color {
   padding: 0;
   margin: 0;
   border: none;
 }
+
 .form-order__type {
   padding: 0;
   margin: 0;
   border: none;
   margin-bottom: 7px;
 }
+
 .form-order__title {
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: #63d1bb;
   margin-bottom: 35px;
 }
+
 .form-order__list {
   padding: 0;
   margin: 0;
   margin-top: -7px;
   list-style-type: none;
 }
-.form-order__list-type{
+
+.form-order__list-type {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+
 .form-order__item {
   width: 38px;
   min-height: 38px;
   margin-bottom: 24px;
 }
+
 .form-order__item-type {
   margin-bottom: 12px;
 }
+
 .control {
   position: relative;
   display: block;
   padding-left: 60px;
 }
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
   border: 2px solid #444444;
   background: #ffffff;
 }
+
 .control-input[type="radio"] + .control-mark:active {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
+
 .control-input[type="checkbox"] + .control-mark:active {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
+
 .control:hover > .control-mark,
 .control-input:focus + .control-mark {
   border: 2px solid #62d1ba;
 }
+
 .control-input[type="radio"] + .control-mark:focus {
   border: 2px solid #62d1ba;
 }
+
 .control-input[type="radio"]:checked + .control-mark::before,
 .control-input[type="radio"]:checked + .control-mark::after {
   position: absolute;
@@ -92,6 +109,7 @@
   border-radius: 50%;
   content: "";
 }
+
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
@@ -102,6 +120,7 @@
   left: 7px;
   content: "";
 }
+
 .control-mark {
   position: absolute;
   top: -5px;
@@ -112,12 +131,15 @@
   border: 2px solid #444444;
   box-sizing: border-box;
 }
+
 .control-mark:hover {
   border: 2px solid #62d1ba;
 }
+
 .control-mark:active {
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
+
 .control-label {
   width: 200px;
   display: inline-block;
@@ -127,6 +149,7 @@
   font-style: normal;
   color: #000000;
 }
+
 @media (min-width: @tablet-width) {
   .form-order__wrapper {
     display: flex;
@@ -135,13 +158,16 @@
     margin: 0 auto;
     padding-left: 50px;
   }
+
   .form-order__line::before {
     display: none;
   }
+
   .form-order__color {
     padding: 52px 0 26px 0;
     background: #f1f1f1;
   }
+
   .form-order__list {
     display: flex;
     flex-direction: row;
@@ -150,35 +176,43 @@
     margin-left: 93px;
     padding-top: 0;
   }
+
   .form-order__type {
     display: flex;
     flex-direction: row;
     padding: 63px 0 33px 0;
     margin: 0;
   }
+
   .form-order__title {
     margin-top: 14px;
     width: 74px;
   }
+
   .form-order__item {
     margin-bottom: 19px;
     width: 261px;
     min-height: 52px;
   }
+
   .form-order__item:last-child {
     margin-bottom: 0;
   }
-  .form-order__list-type{
+
+  .form-order__list-type {
     margin-left: 93px;
     padding-top: 0;
   }
+
   .form-order__item-type {
     margin-bottom: 16px;
   }
+
   .control-label {
     width: 260px;
     font-size: 19px;
   }
+
   .control-mark {
     position: absolute;
     top: 0;
@@ -188,6 +222,7 @@
     background: #f1f1f1;
     box-sizing: border-box;
   }
+
   .control-input[type="radio"]:checked + .control-mark::before,
   .control-input[type="radio"]:checked + .control-mark::after {
     position: absolute;
@@ -196,6 +231,7 @@
     width: 22px;
     height: 22px;
   }
+
   .control-input[type="checkbox"]:checked + .control-mark::before,
   .control-input[type="checkbox"]:checked + .control-mark::after {
     position: absolute;
@@ -206,12 +242,14 @@
     top: 18px;
     left: 11px;
   }
+
   .control {
     position: relative;
     display: block;
     padding: 14px 0 14px 82px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .form-order__wrapper {
     display: flex;
@@ -220,26 +258,32 @@
     margin: 0 auto;
     padding-left: 97px;
   }
+
   .form-order__list-type {
     margin-left: 63px;
     margin-bottom: 28px;
   }
+
   .form-order__list {
     margin-left: 62px;
     width: 69%;
     margin-top: -3px;
   }
+
   .form-order__type {
     padding: 0;
   }
+
   .form-order__color {
     background: #f1f1f1;
   }
+
   .form-order__title {
     margin-top: 18px;
     width: 65px;
     text-align: center;
   }
+
   .form-order__item {
     margin-bottom: 19px;
     width: 262px;
